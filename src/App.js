@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// library
+import React from "react";
+
+//components
+import GifContainer from "./components/GifContainer";
+
+
+//styles
+import "./App.scss";
+import { worksArr } from "./data";
+import { GridLayout } from "./components/GridLayout/grid";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <GifContainer worksArr={worksArr}/> */}
+      <GridLayout/>
     </div>
   );
 }

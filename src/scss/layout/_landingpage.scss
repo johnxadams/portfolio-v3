@@ -1,0 +1,22 @@
+.lp-container {
+    background-color: aquamarine;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    .big-box-lp {
+        height: 30rem;
+        width: 65%;
+        border: 1.5rem red solid;
+        border-radius: 15px;
+        margin-top: 5rem;
+    }
+    .gif-container-lp {
+        height: 50rem;
+        width: 20%;
+        border: .5rem blue dashed;
+        margin-left: 3rem;
+
+    }
+  }
+
+

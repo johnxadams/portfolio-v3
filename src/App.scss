@@ -1,0 +1,35 @@
+@import "./scss/abstract/_abstract-dir";
+@import "./scss/layout/_layout-dir"; 
+
+.App {
+  text-align: center;
+}
+
+.gif-container {
+  /* width: 3rem; */
+  height: 50vh;
+  width: 50%;
+  background-color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.project-card {
+  width: 15rem;
+  height: 15rem;
+  background-color: goldenrod;
+  border: 2px black solid;
+  margin: 1rem;
+}
+
+.gif-circle {
+  background-color: red;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
