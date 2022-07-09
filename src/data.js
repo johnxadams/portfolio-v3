@@ -1,26 +1,26 @@
 export const worksArr = [
     {
       "name": "Lotto",
-      "link": "somelink",
+      "link": "https://placebear.com/640/360",
     },
     {
         "name": "Pokemon",
-        "link": "somelink",
+        "link": "https://placebear.com/640/360",
     },
     {
         "name": "Pokemon",
-        "link": "somelink",
+        "link": "https://placebear.com/640/360",
     },
     {
         "name": "Pokemon",
-        "link": "somelink",
+        "link": "https://placebear.com/640/360",
     },
     {
         "name": "Pokemon",
-        "link": "somelink",
+        "link": "https://placebear.com/640/360",
     },
     {
         "name": "Pokemon",
-        "link": "somelink",
+        "link": "https://placebear.com/640/360",
     },
 ]
