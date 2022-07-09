@@ -1,6 +1,6 @@
 import React from 'react'
 // components
-import GifContainer from './GifContainer'
+import GifContainer from './GifContainer/GifContainer'
 
 // data
 import { worksArr } from "../../../data";

@@ -1,3 +1,26 @@
-@import "./grid-flow";
 @import "./landingpage";
 @import "./_gif-page";
+
+.landing-page {
+    background-color: $mainBackground;
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .gp-container{
+    background-color: green;
+    height: 85vh;
+    @include flex-justify-align-dir (center, center, column);
+  
+    
+  }
+  .div3 {
+    background-color: red;
+  }
+  .div4 {
+    background-color: purple;
+  }
+  .div5 {
+    background-color: blue;
+  }

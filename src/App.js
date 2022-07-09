@@ -2,7 +2,7 @@
 import React from "react";
 
 //components
-import GifContainer from "./components/Layout/GifPage/GifContainer";
+import GifContainer from "./components/Layout/GifPage/GifContainer/GifContainer";
 
 
 //styles
