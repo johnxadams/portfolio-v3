@@ -1,8 +1,9 @@
 @import "./landingpage";
 @import "./_gif-page";
+@import "./lotto-page";
 
 .landing-page {
-    background-color: $mainBackground;
+    background-color: $mainDark;
     height: 85vh;
     display: flex;
     justify-content: space-evenly;
@@ -15,8 +16,9 @@
   
     
   }
-  .div3 {
-    background-color: red;
+  .lotto-page {
+    background-color: $mainDark;
+    height: 85vh;
   }
   .div4 {
     background-color: purple;

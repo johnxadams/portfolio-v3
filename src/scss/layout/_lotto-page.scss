@@ -1,0 +1,99 @@
+
+.topic-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: $mainLight;
+      font-family: kameron, sans-serif;
+      font-weight: 900;
+      font-size: 4rem;
+    }
+    span {
+      color: $mainLight;
+      font-family: mukta, sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+  }
+  .lotto-container {
+    display: flex;
+    justify-content: center;
+    .lottoDiv {
+        border: 5px solid  $mainLight;
+        color: $mainLight;
+        width: 5rem;
+        height: 5rem;
+        margin: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        &:hover {
+            border: 5px solid $hoverLottoDiv;
+            cursor: cell;
+        }
+      }
+      .lottoDiv:nth-child(7) {
+        background: $mainSuperNumberBg;
+        &:hover {
+            background: $hoverSuperNumberBg;
+            cursor: cell;
+            transition: ease-in-out .2s;
+        }
+      }
+
+  }
+  
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    
+  }
+  button {
+    margin: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: mukta, sans-serif;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    border-style: hidden;
+    cursor: pointer;
+   
+  }
+  
+  button:nth-child(1){
+    width: 7rem;
+    border: $mainLight 3px solid;
+    color: $mainLight;
+    background-color: $mainDark;
+    &:hover {
+        background: $mainLight;
+        border: 3px $hoverLottoDiv solid;
+        color: $hoverLottoDiv;
+        transition: ease-in-out .2s;
+    }
+    &:active {
+        background-color: $mainDark;
+        transition: ease-in-out .2s;
+      }
+  }
+  button:nth-child(2){
+    width: 13rem;
+    border: $mainDark 3px solid;
+    background: $mainLight;
+    color: $mainDark;
+    &:hover {
+        background: $mainDark;
+        border: 3px $hoverLottoDiv solid;
+        color: $hoverLottoDiv;
+        transition: ease-in-out .2s;
+    }
+    &:active {
+        background-color: $mainLight;
+        transition: ease-in-out .2s;
+      }
+  }
