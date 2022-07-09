@@ -98,22 +98,53 @@
       }
   }
   .lotto-learn-more-container {
-      width: 20%;
-      height: 15vh;
-      background-color: $mainLight;
-      margin: 5% 0 0 0;
+      width: 80%;
+      height: 10rem;
+      color: $mainLight;
+      background-color: $mainDark;
+      margin: 2% 0 0 0;
+      @include flex-justify-align-dir (space-between, center, column);
       .learn-more-circle {
-          width: 2rem;
+          width: 5rem;
           height: 2rem;
-          background-color: red;
-          border-radius: 50%;
+          border: 2px $learnMoreLight solid;
+          font-size: 0.7rem;
+          color: $learnMoreLight;
+          background-color: $mainDark;
+          border-radius: 20px;
+          margin: 0 0 0.5rem 0;
+          cursor: pointer;
+          @include flex-justify-align-dir (center, center, row);
+    &:hover {
+        background: $mainDark;
+        border: 2px $learnMoreLight solid;
+        color: $mainLight;
+        transition: ease-in-out .2s;
+    }
+    &:active {
+        background-color: $learnMoreLight;
+        border: 2px $mainDark solid;
+        color: $mainDark;
+        transition: ease-in-out .3s;
+      }
       }
       .lotto-info {
-        width: 50%;
-        height: 5rem;
-        background-color: green;
+        width: 15rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+        // background-color: blue;
+        border: 2px $mainLight dotted;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        // animation-name: lottoInfo;
+        // animation-duration: 3s;
+        transition: all 2s ease;
       }
       .toggle-info {
-          display: none;
+        margin-bottom: 0rem;
+        opacity: 0;
+        //   transition: all 2s ease;
       }
   }

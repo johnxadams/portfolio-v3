@@ -10,8 +10,8 @@ export default function LottoLearnMore() {
   return (
     <>
       <div className="lotto-learn-more-container">
-        <div onClick={handleLearnMore} className="learn-more-circle"></div>
-        <div className="lotto-info toggle-info">LottoLearnMore</div>
+        <div onClick={handleLearnMore} className="learn-more-circle">Learn more</div>
+        <div className="lotto-info toggle-info">Duis aute irure dolor in reprehenderit in voluptate velit esse  cupidatat</div>
       </div>
     </>
   );
