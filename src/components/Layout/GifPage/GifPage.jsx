@@ -14,9 +14,6 @@ export default function GifPage() {
              
             <GifContainer worksArr={worksArr}/>
         </div>
-        <div className="text-div">
-
-        </div>
       </>
   )
 }
