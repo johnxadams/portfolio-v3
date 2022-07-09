@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 
 //components
 import LottoApplication from './LottoApplication/LottoApplication'
+import LottoLearnMore from './LottoLearnMore/LottoLearnMore';
 
 export default function LottoPage() {
 
@@ -37,6 +38,7 @@ export default function LottoPage() {
             <button onClick={handleReset}>Reset</button>
             <button onClick={handleLotto}>Try your Luck</button>
           </div>  
+          <LottoLearnMore/>
       </>
   
     );

@@ -9,7 +9,7 @@ import { worksArr } from "../../../data";
 export default function GifPage() {
   return (
       <>
-        <div className='gp-container'>two,
+        <div className='gif-page'>two,
              GifPage
              
             <GifContainer worksArr={worksArr}/>

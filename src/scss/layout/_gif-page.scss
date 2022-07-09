@@ -1,7 +1,8 @@
 .gif-container {
     /* width: 3rem; */
-    height: fit-content;
-    width: 50%;
+    height: object-fit;
+    padding-top: 7rem;
+    max-width: 50%;
     background-color: aquamarine;
     @include flex-justify-align-dir (center, start, row);
     flex-wrap: wrap;

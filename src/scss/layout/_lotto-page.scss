@@ -97,3 +97,23 @@
         transition: ease-in-out .2s;
       }
   }
+  .lotto-learn-more-container {
+      width: 20%;
+      height: 15vh;
+      background-color: $mainLight;
+      margin: 5% 0 0 0;
+      .learn-more-circle {
+          width: 2rem;
+          height: 2rem;
+          background-color: red;
+          border-radius: 50%;
+      }
+      .lotto-info {
+        width: 50%;
+        height: 5rem;
+        background-color: green;
+      }
+      .toggle-info {
+          display: none;
+      }
+  }

@@ -3,26 +3,25 @@
 @import "./lotto-page";
 
 .landing-page {
-    background-color: $mainDark;
-    height: 85vh;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .gp-container{
-    background-color: green;
-    height: 85vh;
-    @include flex-justify-align-dir (center, center, column);
-  
-    
-  }
-  .lotto-page {
-    background-color: $mainDark;
-    height: 85vh;
-  }
-  .div4 {
-    background-color: purple;
-  }
-  .div5 {
-    background-color: blue;
-  }
+  background-color: $mainDark;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gif-page{
+  background-color: green;
+  height: object-fit;
+  @include flex-justify-align-dir(center, center, column);
+}
+.lotto-page {
+  background-color: $mainDark;
+  height: 85vh;
+  @include flex-justify-align-dir(center, center, column);
+}
+.div4 {
+  background-color: purple;
+}
+.div5 {
+  background-color: blue;
+}
