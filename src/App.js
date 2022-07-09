@@ -8,15 +8,20 @@ import GifContainer from "./components/GifContainer";
 //styles
 import "./App.scss";
 import { worksArr } from "./data";
-import { GridLayout } from "./components/GridLayout/grid";
+import { Layout } from "./components/Layout/layout";
 
 function App() {
   return (
     <div className="App">
       {/* <GifContainer worksArr={worksArr}/> */}
-      <GridLayout/>
+      <Layout/>
     </div>
   );
 }
 
 export default App;
+
+/**
+ * Lndingpage
+ * Gifpage
+ */

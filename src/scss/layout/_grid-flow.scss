@@ -1,6 +1,11 @@
-.body-layout {
-}
+// this page handles bigges container
 
+.landing-page {
+  background-color: #202020;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .div2 {
   background-color: green;
