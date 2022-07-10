@@ -1,0 +1,70 @@
+
+// media-query from starting from max-width: 576px upto min-width: 1400px
+
+// XXS
+@media only screen and (max-width: 576px){
+    .gif-container {
+        width: 30rem;
+        .project-card {
+        width: 7rem;
+        height: 7rem;
+        margin: 0.7em;
+        }
+    }
+}
+// #1 starting point
+@media only screen and (min-width: 576px){
+    .gif-container {
+        width: 30rem;
+        .project-card {
+        width: 7rem;
+        height: 7rem;
+        margin: 0.7em;
+        }
+    }
+}
+// #2
+@media only screen and (min-width: 769px){
+    .gif-container {
+        width: 35rem;
+        .project-card {
+        width: 8rem;
+        height: 8rem;
+        margin: 1rem;
+        }
+    }
+}
+// #3 L-large
+@media only screen and (min-width: 992px){
+    .gif-container {
+        width: 40rem;
+        .project-card {
+        width: 9rem;
+        height: 9rem;
+        margin: 1.5rem;
+        }
+    }
+}
+
+// #4 XL-extra-large
+@media only screen and (min-width: 1200px){
+    .gif-container {
+        width: 45rem;
+        .project-card {
+        width: 9.5rem;
+        height: 9.5rem;
+        margin: 1.8rem;
+        }
+    }
+}
+// #5 XXL-wide-screen
+@media only screen and (min-width: 1400px){
+    .gif-container {
+        width: 50rem;
+        .project-card {
+        width: 10rem;
+        height: 10rem;
+        margin: 2rem;
+        }
+    }
+}

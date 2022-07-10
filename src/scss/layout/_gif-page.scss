@@ -2,15 +2,15 @@
     /* width: 3rem; */
     height: object-fit;
     padding-top: 7rem;
-    max-width: 50%;
+    width: 50rem;
     background-color: aquamarine;
     @include flex-justify-align-dir (center, start, row);
     flex-wrap: wrap;
 
   
     .project-card {
-        width: 15rem;
-        height: 15rem;
+        width: 10rem;
+        height: 10rem;
         background-color: goldenrod;
         border: 2px black solid;
         margin: 2rem;

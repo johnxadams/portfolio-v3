@@ -3,7 +3,9 @@ import React, { useState } from "react";
 export default function LottoLearnMore() {
   const [state, setState] = useState();
 
+  // eventFunction to toggle the learn-more-infos
   const handleLearnMore = (e) => {  
+      console.log(e);
     e.target.nextSibling.classList.toggle("toggle-info")
 };
 
