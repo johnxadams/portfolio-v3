@@ -1,0 +1,94 @@
+
+form > input {
+    outline: none;    
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    font-size: 1.1rem;
+    width: 10rem;
+    padding-left: 0.5rem;
+}
+form > input:focus {
+    border: 3px #b48d0c solid;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    outline: none;
+}
+form > input::placeholder{
+    color: #bd9c88;
+    font-size: 0.9rem;
+}
+#search-btn {
+  background: radial-gradient(#e06a25, #eeb90d);
+  width: 4rem;
+  height: 1.4rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0.5px 0.5px 2px black;
+}
+#search-btn:active {
+    color: black;
+    background: radial-gradient(#af511b, #eeb90d);
+    transition: all 0.9s ease-out
+}
+#poke-container {
+  display: block;
+  width: 18rem;
+  height: 30rem;
+  border-radius: 10px;
+  background: linear-gradient(110deg, #8d8df7, #eeb90d, #e06a25);
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 9px black;
+}
+.poke-name {
+  background-color: rgba(137, 43, 226, 0.486);
+  width: 14rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  padding: 0.1rem;
+  border-radius: 5px;
+  margin: 2rem 0 1rem 0;
+}
+.img-container {
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 0.3rem solid #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stats-ability-header {
+  /* text-decoration: underline;
+    text-decoration-color: white; */
+  text-decoration-thickness: 2px;
+  border-bottom: #f3f3f3 2px solid;
+  margin: 1.3rem 0 0.6rem 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#stats-div {
+  /* border: 2px black solid; */
+}
+.list-of-stats {
+  /* background-color: gray; */
+  list-style-type: none;
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.list-of-stats > span:nth-child(2) {
+  /* background-color: white; */
+}
+
+.ability-names-block > :nth-child(1),
+.ability-names-block > :nth-child(2) {
+  font-size: 1rem;
+}

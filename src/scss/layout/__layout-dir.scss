@@ -1,6 +1,7 @@
 @import "./landingpage";
 @import "./_gif-page";
 @import "./lotto-page";
+@import "./pokemon-page";
 
 .landing-page {
   background-color: $mainDark;
@@ -20,7 +21,11 @@
   @include flex-justify-align-dir(center, center, column);
 }
 .pokemon-page {
-  background-color: purple;
+  background-color: purple;  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
 }
 .div5 {
   background-color: blue;
