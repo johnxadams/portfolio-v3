@@ -24,7 +24,7 @@
         color: $mainLight;
         width: 5rem;
         height: 5rem;
-        margin: 10px;
+        margin: 0.7rem;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -53,11 +53,11 @@
     
   }
   button {
-    margin: 1rem;
-    height: 3rem;
     font-size: 1rem;
     font-weight: bold;
     font-family: mukta, sans-serif;
+    margin: 1rem;
+    height: 3rem;
     letter-spacing: 1px;
     border-radius: 6px;
     border-style: hidden;
@@ -126,7 +126,7 @@
         border: 2px $mainDark solid;
         color: $mainDark;
         transition: ease-in-out .3s;
-      }
+        }
       }
       .lotto-info {
         width: 15rem;

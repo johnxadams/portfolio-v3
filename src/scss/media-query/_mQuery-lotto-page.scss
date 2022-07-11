@@ -1,0 +1,77 @@
+@media only screen and (max-width: 576px) {
+.topic-container {
+    h1 {
+        font-size: 2.5rem;
+    }
+    span {
+        font-size: 1.5rem;
+    }
+}
+  .lotto-container {
+    .lottoDiv {
+      border: 2px solid $mainLight;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.5rem;
+      font-size: 0.9rem;
+      &:hover {
+        border: 2px solid $hoverLottoDiv;
+      }
+    }
+  }
+  button {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    height: 1.8rem;
+  }
+  button:nth-child(1) {
+    width: 4.5rem;
+    border: $mainLight 1.5px solid;
+    &:hover {
+      border: $hoverLottoDiv 1.5px solid;
+    }
+  }
+  button:nth-child(2) {
+    width: 8rem;
+    border: $mainDark 1.5px solid;
+    &:hover {
+      border: $hoverLottoDiv 1.5px solid;
+    }
+  }
+  .lotto-learn-more-container {
+    .learn-more-circle {
+        width: 3.4rem;
+        height: 1.2rem;
+        border: 1.5px $learnMoreLight solid;
+        font-size: 0.55rem;
+        margin-top: 1rem;
+        &:hover {
+            border: 1.5px $learnMoreLight solid;
+        }
+        &:active {
+            border: 1.5px $mainDark solid;
+        }
+    }
+    .lotto-info {
+        width: 12rem;
+        height: 5rem;
+        margin-bottom: 2rem;
+        font-size: 0.7rem;
+    }     
+     .toggle-info {
+        margin-bottom: 0rem;
+     }
+  }
+}
+
+// @media only screen and (min-width: 700px) {
+//   .lotto-container {
+//     .lottoDiv {
+//       border: 2px solid $mainLight;
+//       width: 2rem;
+//       height: 2rem;
+//       margin: 0.5;
+//       color: red;
+//     }
+//   }
+// }
