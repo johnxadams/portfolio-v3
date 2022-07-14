@@ -7,16 +7,18 @@ import PokemonPage from "./PokemonPage/PokemonPage";
 export const Layout = () => {
   return (
     <>
-      <section className="pokemon-page">four
-        <PokemonPage />
-      </section>
-      <section className="lotto-page">
-        <LottoPage />
-      </section>
       <section className="gif-page">
+
         <GifPage />
       </section>
-      <section className="landing-page">
+      <section id={"Pokemon"} className="pokemon-page">
+        four
+        <PokemonPage />
+      </section>
+      <section id={"Lotto"} className="lotto-page">
+        <LottoPage />
+      </section>
+      <section id={"Landing-Page"} className="landing-page">
         <Landingpage />
       </section>
       <section className="div5">five</section>

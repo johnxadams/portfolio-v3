@@ -8,7 +8,7 @@ export const worksArr = [
     link: "https://placebear.com/640/360",
   },
   {
-    name: "Pokemon",
+    name: "Landing-Page",
     link: "https://placebear.com/640/360",
   },
   {

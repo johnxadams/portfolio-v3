@@ -4,7 +4,7 @@
     padding-top: 7rem;
     width: 50rem;
     background-color: aquamarine;
-    @include flex-justify-align-dir (center, start, row);
+    @include flex-justify-align-dir (center, flex-start, row);
     flex-wrap: wrap;
 
   
