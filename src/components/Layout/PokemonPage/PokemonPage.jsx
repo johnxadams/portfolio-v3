@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LinkToGifPage from "../LinkToGifPage/LinkToGifPage";
 
 // fetch Data
 const getPokemonData = async (pokemonName) => {
@@ -46,7 +47,7 @@ export default function PokemonPage() {
 
   return (
     <>
-      <div >
+      <div>
         <form id="form-tag">
           <input
             onChange={handlePokemonName}
@@ -64,6 +65,8 @@ export default function PokemonPage() {
           <h1>{pokemonData.name}</h1>
           <h1>{pokemonData.hp}</h1>
         </div>
+        {/* <PokestatsContainer/> */}
+        <LinkToGifPage />
       </div>
     </>
   );

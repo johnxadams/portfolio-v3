@@ -10,18 +10,21 @@
   justify-content: space-evenly;
 }
 
-.gif-page{
-  background-color: green;
+.gif-page {
+  background-color: $mainDark;
   height: object-fit;
   @include flex-justify-align-dir(center, center, column);
 }
 .lotto-page {
+  position: relative;
   background-color: $mainDark;
   height: 85vh;
   @include flex-justify-align-dir(center, center, column);
 }
 .pokemon-page {
-  background-color: purple;  display: flex;
+  position: relative;
+  background-color: $mainDark;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -29,4 +32,29 @@
 }
 .div5 {
   background-color: blue;
+  height: 80vh;
+}
+.link-up {
+  color: darkred;
+  width: 5rem;
+  height: 5rem;
+  // background: aliceblue;
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  rotate: 45deg;
+  @include flex-justify-align-dir(center, center, row);
+
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #807b7b;
+    cursor: pointer;
+    &:active {
+    border-bottom: 20px solid #c0bdbd;
+    transition: ease-in-out .2s;
+    }
+  }
 }
