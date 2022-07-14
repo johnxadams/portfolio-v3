@@ -7,9 +7,9 @@ import PokemonPage from "./PokemonPage/PokemonPage";
 export const Layout = () => {
   return (
     <>
-      {/* <section className="pokemon-page">four
+      <section className="pokemon-page">four
         <PokemonPage />
-      </section> */}
+      </section>
       <section className="lotto-page">
         <LottoPage />
       </section>
