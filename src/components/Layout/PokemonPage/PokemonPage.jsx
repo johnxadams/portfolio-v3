@@ -3,17 +3,17 @@ import React, { useState, useEffect } from "react";
 // import displayPokemon from './script-pokemon'
 
 export default function PokemonPage() {
-
-// useStates
+  // useStates
   const [pokemonData, setPokemonData] = useState({
     name: "",
     species: "",
     img: "",
-    stats: "",
+    hp: "",
+    attack:"",
     type: "",
-});
+  });
   const [pokemonName, setPokemonName] = useState("");
-  const [pokemonChoses, setPokemonChosen] = useState("false")
+  // const [pokemonChosen, setPokemonChosen] = useState("false");
 
   // fetch Data
   const getPokemonData = async (pokemonName) => {
@@ -25,27 +25,30 @@ export default function PokemonPage() {
     return pokeData;
   };
 
-// useEffect
-    useEffect(() => {
-        // console.log();
-        getPokemonData(pokemonName).then((pokeData) => setPokemonData({
-          name: pokemonName,
-          species: pokeData.species.name,
-          img: pokeData.sprites.front_default,
-          hp: pokeData.stats[0].base_stat,
-          attack: pokeData.stats[1].base_stat,
-          type: pokeData.types[0].type.name,
-      }));
-    }, [pokemonName])
+  // useEffect
+  useEffect(() => {
+    // console.log();
+    getPokemonData(pokemonName).then((pokeData) =>
+      setPokemonData({
+        name: pokemonName,
+        species: pokeData.species.name,
+        img: pokeData.sprites.front_default,
+        hp: pokeData.stats[0].base_stat,
+        attack: pokeData.stats[1].base_stat,
+        type: pokeData.types[0].type.name,
+      })
+    );
+    // setPokemonChosen(true);
+  }, [pokemonName]);
 
-//handleEvents
+  //handleEvents
 
-    const handlePokemonName = (e) => {
-      e.preventDefault();
-      console.log(pokemonName);
-      setPokemonName(e.target.value);
-      // setPokemonName("")
-    };
+  const handlePokemonName = (e) => {
+    e.preventDefault();
+    console.log(pokemonName);
+    setPokemonName(e.target.value);
+    // setPokemonName("")
+  };
   const handlePokemonSearchBtn = (e) => {
     e.preventDefault();
     getPokemonData();
@@ -66,7 +69,11 @@ export default function PokemonPage() {
             Search
           </button>
         </form>
-        <div id="poke-container"></div>
+        <div id="poke-container">
+          <h1>{pokemonData.name}</h1>
+          <h1>
+          {pokemonData.hp}</h1>
+        </div>
       </div>
     </>
   );
