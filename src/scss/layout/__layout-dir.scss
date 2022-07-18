@@ -11,7 +11,7 @@
 }
 
 .gif-page {
-  background-color: $mainDark;
+  background-color: $mainLight;
   height: object-fit;
   @include flex-justify-align-dir(center, center, column);
 }
@@ -23,7 +23,7 @@
 }
 .pokemon-page {
   position: relative;
-  background-color: $mainDark;
+  background-color: $mainLight;
   display: flex;
   justify-content: center;
   align-items: center;

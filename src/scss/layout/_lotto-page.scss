@@ -105,25 +105,27 @@
       margin: 2% 0 0 0;
       @include flex-justify-align-dir (space-between, center, column);
       .learn-more-circle {
-          width: 5rem;
-          height: 2rem;
-          border: 2px $learnMoreLight solid;
-          font-size: 0.7rem;
+          // width: 5rem;
+          // height: 2rem;
+          // border: 2px $learnMoreLight solid;
+          font-size: 0.8rem;
           color: $learnMoreLight;
           background-color: $mainDark;
-          border-radius: 20px;
+          // border-radius: 20px;
           margin: 0 0 0.5rem 0;
           cursor: pointer;
           @include flex-justify-align-dir (center, center, row);
     &:hover {
         background: $mainDark;
-        border: 2px $learnMoreLight solid;
+        // border: 2px $learnMoreLight solid;
+        text-decoration: underline;
         color: $mainLight;
         transition: ease-in-out .2s;
+
     }
     &:active {
-        background-color: $learnMoreLight;
-        border: 2px $mainDark solid;
+        // background-color: $learnMoreLight;
+        // border: 2px $mainDark solid;
         color: $mainDark;
         transition: ease-in-out .3s;
         }
