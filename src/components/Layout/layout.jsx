@@ -16,10 +16,10 @@ export const Layout = () => {
       <section id={"gif-page"} className="gif-page">
         <GifPage />
       </section>
-      {/* <section id={"Pokemon"} className="pokemon-page">
+      <section id={"Pokemon"} className="pokemon-page">
         four
         <PokemonPage />
-      </section> */}
+      </section>
       <section className="div5">five</section>
     </>
   );

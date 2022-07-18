@@ -55,7 +55,6 @@ export default function PokemonPage() {
             id="pokemon-input"
             placeholder="search pokemon"
             value={pokemonName}
-            autoFocus
           />
           <button onClick={handlePokemonSearchBtn} id="search-btn">
             Search
