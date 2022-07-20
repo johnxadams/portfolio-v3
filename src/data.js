@@ -30,3 +30,9 @@ export const worksArr = [
     alt: "Pokemon API",
   },
 ];
+
+
+export const pokemonStatsNaming = {
+  hp: "hp",
+  attack: "attack"
+}
