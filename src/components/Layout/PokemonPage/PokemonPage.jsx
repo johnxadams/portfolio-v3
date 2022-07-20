@@ -23,8 +23,8 @@ export default function PokemonPage() {
     specialDefense: "",
     abilities: "",
     speed: "",
-    type: "",
     dataName: "",
+    classes: "",
   });
   const [pokemonName, setPokemonName] = useState("");
   // const [pokemonChosen, setPokemonChosen] = useState("false");
@@ -68,9 +68,11 @@ export default function PokemonPage() {
           pokeData.abilities[0].ability.name,
           pokeData.abilities[1].ability.name,
         ],
-        // attack: pokeData.stats[1].base_stat,
-        type: pokeData.types[0].type.name,
         dataName: { stats: "stats", abilities: "abilities" },
+        classes: {
+          imgContainer: "img-container",
+          pokeNameContainer: "pokemon-name-container",
+        }
       });
       setPokemonName("");
     });
@@ -96,8 +98,10 @@ export default function PokemonPage() {
           </button>
         </form>
         <div id="poke-container">
-          <h5>{pokemonData.name.toUpperCase()}</h5>
-          <div className="img-container">
+          <div className={pokemonData.classes.pokeNameContainer}>
+            {pokemonData.name.toUpperCase()}
+          </div>
+          <div className={pokemonData.classes.imgContainer}>
             <img src={pokemonData.img} alt={pokemonData.name} />
           </div>
           <h2 className="stats-header">{pokemonData.dataName.stats}</h2>

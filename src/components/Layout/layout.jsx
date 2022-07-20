@@ -8,7 +8,6 @@ export const Layout = () => {
   return (
     <>
     <section id={"Pokemon"} className="pokemon-page">
-      four
       <PokemonPage />
     </section>
     {/* <section id={"Lotto"} className="lotto-page">
