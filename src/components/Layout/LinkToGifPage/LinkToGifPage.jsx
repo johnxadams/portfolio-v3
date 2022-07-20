@@ -5,7 +5,7 @@ export default function LinkToGifPage() {
     <>
       <div className="link-up">
         <a href="#gif-page">
-          <div class="arrow-up"></div>
+          <div className="arrow-up"></div>
         </a>
       </div>
     </>

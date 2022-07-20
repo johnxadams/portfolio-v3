@@ -61,7 +61,7 @@ export default function PokemonPage() {
           </button>
         </form>
         <div id="poke-container">
-          <h1>{pokemonData.name}</h1>
+          <h5>{pokemonData.name.toUpperCase()}</h5>
           <h1>{pokemonData.hp}</h1>
         </div>
         {/* <PokestatsContainer/> */}
