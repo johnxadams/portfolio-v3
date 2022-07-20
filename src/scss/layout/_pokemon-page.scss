@@ -58,21 +58,23 @@ form > input::placeholder{
 .img-container {
   width: 6.5rem;
   height: 6.5rem;
-  border: 0.3rem solid #f3f3f3;
+  border: 0.3rem solid #f3f3f3b0;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.stats-ability-header {
+.stats-header,
+.ability-header {
   /* text-decoration: underline;
     text-decoration-color: white; */
   text-decoration-thickness: 2px;
   border-bottom: #f3f3f3 2px solid;
-  margin: 1.3rem 0 0.6rem 0;
+  margin: 1.3rem 0 0.2em 0;
   font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 1px;
+  line-height: 1rem;
 }
 #stats-div {
   /* border: 2px black solid; */
@@ -83,12 +85,19 @@ form > input::placeholder{
   width: 10rem;
   display: flex;
   justify-content: space-between;
+  line-height: 1.3rem;
 }
 .list-of-stats > span:nth-child(2) {
   /* background-color: white; */
 }
 
+.ability-names-block {
+  display: flex;
+  flex-direction: column;
+}
 .ability-names-block > :nth-child(1),
 .ability-names-block > :nth-child(2) {
   font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
 }

@@ -12,4 +12,4 @@ const testing = {
   let values = Object.keys(testing)
   console.log("values: ", values);
 
-  {values.ATTTACK && <p>{values.ATTACK}</p>}
+  {values.ATTTACK && <p>{alues.ATTACK}</p>}

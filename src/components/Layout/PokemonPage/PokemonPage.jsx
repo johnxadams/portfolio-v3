@@ -21,7 +21,7 @@ export default function PokemonPage() {
     defense: "",
     specialAttack: "",
     specialDefense: "",
-    Abilities: "",
+    abilities: "",
     speed: "",
     type: "",
     dataName: "",
@@ -48,19 +48,29 @@ export default function PokemonPage() {
         hp: [
           // because for some reason this dosnt work as an object!!!
           pokeData.stats[0].stat.name,
-          pokeData.stats[0].base_stat,]
-        ,
+          pokeData.stats[0].base_stat,
+        ],
         attack: {
           attackName: pokeData.stats[1].stat.name,
           attackStat: pokeData.stats[1].base_stat,
         },
-        defense: "",
-        specialAttack: "",
-        specialDefense: "",
-        abilities: pokeData.abilities[0].ability.name,
+        defense: [pokeData.stats[2].stat.name, pokeData.stats[2].base_stat],
+        specialAttack: [
+          pokeData.stats[3].stat.name,
+          pokeData.stats[3].base_stat,
+        ],
+        specialDefense: [
+          pokeData.stats[4].stat.name,
+          pokeData.stats[4].base_stat,
+        ],
+        speed: [pokeData.stats[5].stat.name, pokeData.stats[5].base_stat],
+        abilities: [
+          pokeData.abilities[0].ability.name,
+          pokeData.abilities[1].ability.name,
+        ],
         // attack: pokeData.stats[1].base_stat,
         type: pokeData.types[0].type.name,
-        dataName: {stats: "stats", abilities: "abilities" }
+        dataName: { stats: "stats", abilities: "abilities" },
       });
       setPokemonName("");
     });
@@ -87,7 +97,7 @@ export default function PokemonPage() {
         </form>
         <div id="poke-container">
           <h5>{pokemonData.name.toUpperCase()}</h5>
-          <div className="pokemon-img-container">
+          <div className="img-container">
             <img src={pokemonData.img} alt={pokemonData.name} />
           </div>
           <h2 className="stats-header">{pokemonData.dataName.stats}</h2>
@@ -103,15 +113,27 @@ export default function PokemonPage() {
               <span>{pokemonData.attack.attackStat}</span>
             </div>
             <div className="list-of-stats">
-              <span>hp</span> <span>{pokemonData.hp[0]}</span>
+              <span>{pokemonData.defense[0]}</span>
+              <span>{pokemonData.defense[1]}</span>
             </div>
             <div className="list-of-stats">
-              <span>hp</span> <span>{pokemonData.hp}</span>
+              <span>{pokemonData.specialAttack[0]}</span>
+              <span>{pokemonData.specialAttack[1]}</span>
             </div>
-            <h1>{pokemonData.Abilities}</h1>
-           <h1>{pokemonData.dataName.abilities}</h1>
+            <div className="list-of-stats">
+              <span>{pokemonData.specialDefense[0]}</span>
+              <span>{pokemonData.specialDefense[1]}</span>
+            </div>
+            <div className="list-of-stats">
+              <span>{pokemonData.speed[0]}</span>
+              <span>{pokemonData.speed[1]}</span>
+            </div>
           </div>
-          <h1>{pokemonData.hp}</h1>
+          <h1 className="ability-header">{pokemonData.dataName.abilities}</h1>
+          <div className="ability-names-block">
+            <span>{pokemonData.abilities[0]}</span>
+            <span>{pokemonData.abilities[1]}</span>
+          </div>
         </div>
         {/* <PokestatsContainer/> */}
         <LinkToGifPage />
