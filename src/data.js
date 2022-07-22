@@ -36,3 +36,11 @@ export const pokemonStatsNaming = {
   hp: "hp",
   attack: "attack"
 }
+
+export const mySkills = [
+  "Junior Web-Developer",
+  "REACT",
+  "JavaScript",
+  "SCSS",
+  "HTML"
+]
