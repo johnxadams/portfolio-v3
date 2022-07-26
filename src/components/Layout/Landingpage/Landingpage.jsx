@@ -7,9 +7,14 @@ export const Landingpage = () => {
         <div className="inside-big-box-lp">
           <div className="inside-big-box-lp-header">
             <div className="my-logo-container">Logo</div>
-            <div className="my-location-email">Mail Location</div>
+            <div className="my-github-linkedin">
+              <i className="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-github"></i>
+            </div>
             <div></div>
           </div>
+
+
           <div className="name-and-skills-container">
             <div className="my-name">John Adams</div>
             <div className="my-skills">
@@ -20,12 +25,12 @@ export const Landingpage = () => {
               </ul>
             </div>
             <div className="my-info-box">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores possimus fugit, iste obcaecati enim eaque velit sit
-              doloribus quos maiores praesentium quibusdam ducimus earum eos
-              blanditiis, nobis amet vero tempore! Cupiditate dolore quos
-              consequatur doloremque accusantium aliquam nulla totam tempora
-              nobis similique a, illo ex dicta. Vel velit deleniti quo!
+              Hello, I’m a software engineer in Leipzig. I love to craft solid
+              and scalable visuals on the internet. My Interest in
+              web-development started back in 2017 – when I worked in a start-up
+              company serveRain, today Tillome. <br/> Fast forward today I’ve refined
+              my skills through a year of MERN-Stack schooling and I’m looking
+              forward to apply my experience and help your business grow.
             </div>
           </div>
         </div>

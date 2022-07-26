@@ -1,12 +1,12 @@
 // je kleiner der widt wird, desto kleiner  alles inere manuel eingestellt.
 
 .big-box-behind-lp {
-  height: 70vh;
+  height: 75vh;
   width: 60%;
   background-color: #000000;
   border: 2px white solid;
   border-radius: 35px;
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
     background-color: #d5d5d5;
     border-radius: 10px;
     font-size: 5rem;
-    font-family: "Kameron";
+
     .inside-big-box-lp-header {
       width: auto;
       height: 6rem;
@@ -29,27 +29,34 @@
         width: 5rem;
         background-color: olive;
       }
-      .my-location-email {
+      .my-github-linkedin {
         width: 10rem;
         height: auto;
         background-color: olivedrab;
+        @include flex-justify-align-dir (space-evenly, flex-start, row) ;
+        i {
+            font-size: 2rem;
+        }
       }
     }
     .name-and-skills-container {
       // width: 80%;
       height: 11rem;
       background: rgba(6, 90, 6, 0.575);
-      margin: 1rem 0 0 1rem;
+      margin: 1rem 0 0 0rem;
       @include flex-justify-align-dir(flex-start, flex-start, column);
       .my-name {
-        // width: 100%;
+        width: 98%;
         height: 7rem;
-        background: rgba(139, 0, 0, 0.945);
+        // background: rgba(139, 0, 0, 0.945);
         font-family: "Poppins";
         font-size: 7rem;
         font-weight: 400;
         z-index: 1;
-        @include flex-justify-align-dir(center, center, row);
+        border-bottom: 1px solid #5555559a;
+        align-self: center;
+        padding: 1rem 0 0 1rem;
+        @include flex-justify-align-dir(flex-start, center, row);
       }
       .my-skills {
         // width: 10rem;
@@ -60,10 +67,14 @@
           li {
             display: inline-block;
             list-style-type: none;
-            margin-left: 1rem;
+            // margin-left: 1rem;
+            // margin-bottom: 1rem;
+            margin: 0 0 1rem 1rem;
             border: 2px solid black;
             padding: 5px;
             border-radius: 15px;
+            font-size: 0.9rem;
+            font-family: "Kameron";
           }
         }
       }
@@ -73,6 +84,10 @@
       border: 1px dashed black;
       font-size: 1.2rem;
       font-family: "Poppins";
+      padding-right: 1rem;
+      background-color: aliceblue;
+      text-align: justify;
+      width: 98%;
     }
   }
 }
