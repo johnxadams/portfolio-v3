@@ -6,8 +6,9 @@
 .landing-page {
   background-color: $mainDark;
   height: 85vh;
-  display: flex;
-  justify-content: space-evenly;
+  // display: flex;
+  // justify-content: space-evenly;
+  @include flex-justify-align-dir (flex-start, flex-start, row) ;
 }
 
 .gif-page {

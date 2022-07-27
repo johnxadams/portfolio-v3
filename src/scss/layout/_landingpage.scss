@@ -16,7 +16,6 @@
     height: 92%;
     background-color: #d5d5d5;
     border-radius: 10px;
-    font-size: 5rem;
 
     .inside-big-box-lp-header {
       width: auto;
@@ -28,54 +27,62 @@
         height: 100%;
         width: 5rem;
         background-color: olive;
+        @include flex-justify-align-dir(center, center, row);
+        img {
+          object-fit: contain;
+          width: 70%;
+        }
       }
-      .my-github-linkedin {
-        width: 10rem;
+      .my-network-container-header {
+        width: auto;
         height: auto;
-        background-color: olivedrab;
-        @include flex-justify-align-dir (space-evenly, flex-start, row) ;
+        // background-color: olivedrab;
+        align-self: flex-start;
+        margin-top: 0.5rem;
+        @include flex-justify-align-dir(space-evenly, flex-start, row);
         i {
-            font-size: 2rem;
+          font-size: 1.5rem;
+          margin-right: 1rem;
         }
       }
     }
     .name-and-skills-container {
-      // width: 80%;
+      //   width: auto;
       height: 11rem;
       background: rgba(6, 90, 6, 0.575);
       margin: 1rem 0 0 0rem;
       @include flex-justify-align-dir(flex-start, flex-start, column);
       .my-name {
-        width: 98%;
+        width: auto;
         height: 7rem;
         // background: rgba(139, 0, 0, 0.945);
-        font-family: "Poppins";
+        font-family: "heebo";
         font-size: 7rem;
-        font-weight: 400;
+        font-weight: 600;
         z-index: 1;
-        border-bottom: 1px solid #5555559a;
-        align-self: center;
+        background-color: rgb(112, 44, 44);
+        // align-self: center;
         padding: 1rem 0 0 1rem;
         @include flex-justify-align-dir(flex-start, center, row);
       }
       .my-skills {
-        // width: 10rem;
-        height: 4rem;
+        // height: 4rem;
+        // horizontal border-top line
+        width: 100%;
+        border-top: 1px solid #5555559a;
         background: rgb(92, 92, 151);
-        @include flex-justify-align-dir(center, flex-end, row);
-        ul {
-          li {
-            display: inline-block;
-            list-style-type: none;
-            // margin-left: 1rem;
-            // margin-bottom: 1rem;
-            margin: 0 0 1rem 1rem;
-            border: 2px solid black;
-            padding: 5px;
-            border-radius: 15px;
-            font-size: 0.9rem;
-            font-family: "Kameron";
-          }
+        @include flex-justify-align-dir(flex-start, flex-end, row);
+        span {
+          display: inline-block;
+          list-style-type: none;
+          // margin-left: 1rem;
+          // margin-bottom: 1rem;
+          margin: 0 0 1rem 1rem;
+          border: 2px solid black;
+          padding: 5px;
+          border-radius: 15px;
+          font-size: 0.9rem;
+          font-family: "Kameron";
         }
       }
     }
@@ -83,7 +90,7 @@
       margin-top: 3rem;
       border: 1px dashed black;
       font-size: 1.2rem;
-      font-family: "Poppins";
+      font-family: "heebo";
       padding-right: 1rem;
       background-color: aliceblue;
       text-align: justify;
@@ -91,9 +98,11 @@
     }
   }
 }
-.gif-container-lp {
-  height: 40rem;
-  width: 20%;
+.profil-img-container-lp {
+  height: 12rem;
+  width: 12rem;
   border: 0.5rem blue dashed;
   margin-left: 3rem;
+margin-top: 15rem;
+  border-radius: 50%;
 }
