@@ -1,5 +1,6 @@
 import React from "react";
-
+// this is not suppose to repeat itself 
+// be there once - and stay sticky
 export default function LinkToGifPage() {
   return (
     <>

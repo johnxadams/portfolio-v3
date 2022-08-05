@@ -1,5 +1,7 @@
+// data
 import { mySkills } from "../../../data";
 
+// images
 import logo1 from "../../../images/logo1.png";
 
 

@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
 
 
-export default function LottoApplication(props){
+
+export default function LottoApplication({outputLottoNumbers}){
 
     return (
         <>
@@ -10,7 +10,7 @@ export default function LottoApplication(props){
                 <span>good luck</span>
             </div>
             <div className="lotto-container">
-                {props.outputLottoNumbers.map((num, i) => {
+                {outputLottoNumbers.map((num, i) => {
                     return (<div className="lottoDiv" key={i}>{num}</div>)
                 })}
             </div>

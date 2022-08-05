@@ -1,9 +1,10 @@
+// hooks
 import React, {useState} from 'react'
-import LinkToGifPage from '../LinkToGifPage/LinkToGifPage';
 
 //components
 import LottoApplication from './LottoApplication/LottoApplication'
 import LottoLearnMore from './LottoLearnMore/LottoLearnMore';
+import LinkToGifPage from '../LinkToGifPage/LinkToGifPage';
 
 export default function LottoPage() {
 
