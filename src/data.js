@@ -31,16 +31,32 @@ export const worksArr = [
   },
 ];
 
-
 export const pokemonStatsNaming = {
   hp: "hp",
-  attack: "attack"
-}
+  attack: "attack",
+};
 
 export const mySkills = [
   "Junior Web-Developer",
   "REACT",
   "JavaScript",
   "SCSS",
-  "HTML"
-]
+  "HTML",
+];
+
+//monthData for weatherApp
+export const monthData = [
+  null,
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "Dezember",
+];

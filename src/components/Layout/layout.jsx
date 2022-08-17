@@ -3,10 +3,15 @@ import { Landingpage } from "./Landingpage/Landingpage";
 import GifPage from "./GifPage/GifPage";
 import LottoPage from "./LottoPage/LottoPage";
 import PokemonPage from "./PokemonPage/PokemonPage";
+import WeatherPage from "./WeatherPage/WeatherPage";
 
 export const Layout = () => {
   return (
     <>
+      <section className="div5">
+        five
+        <WeatherPage />
+      </section>
       <section id={"Landing-Page"} className="landing-page">
         <Landingpage />
       </section>
@@ -19,7 +24,6 @@ export const Layout = () => {
       <section id={"Lotto"} className="lotto-page">
         <LottoPage />
       </section>
-      <section className="div5">five</section>
     </>
   );
 };

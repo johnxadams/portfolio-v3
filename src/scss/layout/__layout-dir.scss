@@ -2,13 +2,14 @@
 @import "./_gif-page";
 @import "./lotto-page";
 @import "./pokemon-page";
+@import "./weather-page";
 
 .landing-page {
   background-color: $mainDark;
   height: 85vh;
   // display: flex;
   // justify-content: space-evenly;
-  @include flex-justify-align-dir (flex-start, flex-start, row) ;
+  @include flex-justify-align-dir(flex-start, flex-start, row);
 }
 
 .gif-page {
@@ -54,8 +55,8 @@
     border-bottom: 20px solid #807b7b;
     cursor: pointer;
     &:active {
-    border-bottom: 20px solid #c0bdbd;
-    transition: ease-in-out .2s;
+      border-bottom: 20px solid #c0bdbd;
+      transition: ease-in-out 0.2s;
     }
   }
 }
