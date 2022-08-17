@@ -2,7 +2,7 @@
   position: relative;
   text-align: center;
   width: auto;
-  height: 100vh;
+  height: 95vh;
   background-color: rgba(0, 128, 0, 0.356);
   color: white;
   .search {
@@ -42,7 +42,12 @@
       height: 5rem;
       .location {
         // background-color: #f8f8f849;
-        font-size: 2rem;
+        // font-size: 2rem;
+        p {
+          font-size: 3rem;
+          margin-top: -0.1rem;
+          font-weight: 500;
+        }
       }
 
       .temperature {
@@ -56,6 +61,7 @@
         @include flex-justify-align-dir(center, center, column);
         h3 {
           font-size: 4rem;
+          margin-top: 2.5rem;
         }
       }
       .weather-icon-div {
@@ -64,7 +70,7 @@
         // background-color: #f8f8f821;
         width: 4rem;
         height: 4rem;
-        margin-top: -2.5rem;
+        margin-top: -2rem;
         @include flex-justify-align-dir(center, center, row);
         img {
           transform: rotate(0deg);
@@ -103,14 +109,18 @@
         // line-height: 1px;
         p:first-child {
           font-weight: bold;
+          font-size: 1.3rem;
+          margin-top: 1rem;
         }
-      }
-      .wi-bottom {
-        font-size: 3rem;
-        height: 3rem;
-        // color: red;
-        // background-color: transparent;
-        @include flex-justify-align-dir(center, center, column);
+        .weather-icon-bottom {
+          height: auto;
+          // background-color: transparent;
+          @include flex-justify-align-dir(center, center, column);
+          .wi {
+            font-size: 3rem;
+            margin-top: -0.2rem;
+          }
+        }
       }
     }
   }
@@ -156,7 +166,4 @@
   // content: "";
   background: url(../../assets/bg-weather/mist-weather.jpg) no-repeat center
     center/cover;
-}
-.bold {
-  font-weight: bold;
 }

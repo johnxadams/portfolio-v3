@@ -60,7 +60,7 @@ export default function WeatherPage() {
   // console.log(bgWeather);
   // console.log(data.weather?.[0].main.toLowerCase());
   return (
-    <div className={`app ${bgWeather}`}>
+    <div className={`weather-app ${bgWeather}`}>
       <div className="search">
         <input
           value={location}
@@ -99,22 +99,22 @@ export default function WeatherPage() {
             <div className="bottom">
               <div className="feels">
                 {data.main && <p>{Math.floor(data.main.feels_like)}°</p>}
-                <div className="wi-bottom">
-                  <WiThermometer />
+                <div className="weather-icon-bottom">
+                  <WiThermometer className="wi" />
                 </div>
                 <p>Feels Like</p>
               </div>
               <div className="humidity">
                 {data.main ? <p>{data.main.humidity}%</p> : null}
-                <div className="wi-bottom">
-                  <WiHumidity />
+                <div className="weather-icon-bottom">
+                  <WiHumidity className="wi" />
                 </div>
                 <p>Humidity</p>
               </div>
               <div className="wind">
                 {data.wind && <p>{Math.floor(data.wind.speed)} km/h</p>}
-                <div className="wi-bottom">
-                  <WiStrongWind />
+                <div className="weather-icon-bottom">
+                  <WiStrongWind className="wi" />
                 </div>
                 <p>Wind Speed</p>
               </div>

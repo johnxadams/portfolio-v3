@@ -8,8 +8,7 @@ import WeatherPage from "./WeatherPage/WeatherPage";
 export const Layout = () => {
   return (
     <>
-      <section className="div5">
-        five
+      <section className="weather-page">
         <WeatherPage />
       </section>
       <section id={"Landing-Page"} className="landing-page">
