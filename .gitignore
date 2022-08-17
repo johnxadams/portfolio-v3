@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+#API-Key for weatherApp
+api-key.js
+
+
 # testing
 /coverage
 
@@ -22,5 +26,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#API-Key for weatherApp
-.api-key.js
