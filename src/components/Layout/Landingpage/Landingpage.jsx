@@ -33,7 +33,7 @@ export const Landingpage = () => {
               Hello, I’m a software engineer based in Leipzig who loves to craft
               solid and scalable visuals on the internet. My Interest in
               web-development started back in 2017 – when I worked in a start-up
-              company serveRain, today Tillome. <br /> Fast forward today I’ve
+              company serveRain, todays Tillome, Inc. <br /> Fast forward today I’ve
               refined my skills through a year of MERN-Stack schooling and I’m
               looking forward to apply my experience and help your business
               grow.

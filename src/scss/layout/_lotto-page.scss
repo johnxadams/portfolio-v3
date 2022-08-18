@@ -1,152 +1,146 @@
-
 .topic-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    h1 {
-      color: $mainLight;
-      font-family: kameron, sans-serif;
-      font-weight: 900;
-      font-size: 4rem;
-    }
-    span {
-      color: $mainLight;
-      font-family: mukta, sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-    }
-  }
-  .lotto-container {
-    display: flex;
-    justify-content: center;
-    .lottoDiv {
-        border: 5px solid  $mainLight;
-        color: $mainLight;
-        width: 5rem;
-        height: 5rem;
-        margin: 0.7rem;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.8rem;
-        &:hover {
-            border: 5px solid $hoverLottoDiv;
-            cursor: cell;
-        }
-      }
-      .lottoDiv:nth-child(7) {
-        background: $mainSuperNumberBg;
-        &:hover {
-            background: $hoverSuperNumberBg;
-            cursor: cell;
-            transition: ease-in-out .2s;
-        }
-      }
-
-  }
-  
-
-  .button-container {
-    display: flex;
-    justify-content: center;
-    
-  }
-  button {
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: mukta, sans-serif;
-    margin: 1rem;
-    height: 3rem;
-    letter-spacing: 1px;
-    border-radius: 6px;
-    border-style: hidden;
-    cursor: pointer;
-   
-  }
-  
-  button:nth-child(1){
-    width: 7rem;
-    border: $mainLight 3px solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
     color: $mainLight;
-    background-color: $mainDark;
-    &:hover {
-        background: $mainLight;
-        border: 3px $hoverLottoDiv solid;
-        color: $hoverLottoDiv;
-        transition: ease-in-out .2s;
-    }
-    &:active {
-        background-color: $mainDark;
-        transition: ease-in-out .2s;
-      }
+    font-family: kameron, sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
   }
-  button:nth-child(2){
-    width: 13rem;
-    border: $mainDark 3px solid;
-    background: $mainLight;
-    color: $mainDark;
-    &:hover {
-        background: $mainDark;
-        border: 3px $hoverLottoDiv solid;
-        color: $hoverLottoDiv;
-        transition: ease-in-out .2s;
-    }
-    &:active {
-        background-color: $mainLight;
-        transition: ease-in-out .2s;
-      }
+  span {
+    color: $mainLight;
+    font-family: mukta, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
   }
-  .lotto-learn-more-container {
-      width: 80%;
-      height: 10rem;
-      color: $mainLight;
-      background-color: $mainDark;
-      margin: 2% 0 0 0;
-      @include flex-justify-align-dir (space-between, center, column);
-      .learn-more-circle {
-          // width: 5rem;
-          // height: 2rem;
-          // border: 2px $learnMoreLight solid;
-          font-size: 0.8rem;
-          color: $learnMoreLight;
-          background-color: $mainDark;
-          // border-radius: 20px;
-          margin: 0 0 0.5rem 0;
-          cursor: pointer;
-          @include flex-justify-align-dir (center, center, row);
+}
+.lotto-container {
+  display: flex;
+  justify-content: center;
+  .lottoDiv {
+    border: 5px solid $mainLight;
+    color: $mainLight;
+    width: 5rem;
+    height: 5rem;
+    margin: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
     &:hover {
-        background: $mainDark;
-        // border: 2px $learnMoreLight solid;
-        text-decoration: underline;
-        color: $mainLight;
-        transition: ease-in-out .2s;
+      border: 5px solid $hoverLottoDiv;
+      cursor: cell;
+    }
+  }
+  .lottoDiv:nth-child(7) {
+    background: $mainSuperNumberBg;
+    &:hover {
+      background: $hoverSuperNumberBg;
+      cursor: cell;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: mukta, sans-serif;
+  margin: 1rem;
+  height: 3rem;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+button:nth-child(1) {
+  width: 7rem;
+  border: $mainLight 3px solid;
+  color: $mainLight;
+  background-color: $mainDark;
+  &:hover {
+    background: $mainLight;
+    border: 3px $hoverLottoDiv solid;
+    color: $hoverLottoDiv;
+    transition: ease-in-out 0.2s;
+  }
+  &:active {
+    background-color: $mainDark;
+    transition: ease-in-out 0.2s;
+  }
+}
+button:nth-child(2) {
+  width: 13rem;
+  border: $mainDark 3px solid;
+  background: $mainLight;
+  color: $mainDark;
+  &:hover {
+    background: $mainDark;
+    border: 3px $hoverLottoDiv solid;
+    color: $hoverLottoDiv;
+    transition: ease-in-out 0.2s;
+  }
+  &:active {
+    background-color: $mainLight;
+    transition: ease-in-out 0.2s;
+  }
+}
+.lotto-learn-more-container {
+  width: 60%;
+  height: 10rem;
+  color: $mainLight;
+  background-color: darkblue; // $mainDark;
+  margin: 2% 0 0 0;
+  @include flex-justify-align-dir(space-between, center, column);
+  .learn-more-circle {
+    // width: 5rem;
+    // height: 2rem;
+    // border: 2px $learnMoreLight solid;
+    font-size: 0.8rem;
+    color: $learnMoreLight;
+    background-color: $mainDark;
+    // border-radius: 20px;
+    margin: 0 0 0.5rem 0;
+    cursor: pointer;
+    @include flex-justify-align-dir(center, center, row);
+    &:hover {
+      background: $mainDark;
+      // border: 2px $learnMoreLight solid;
+      text-decoration: underline;
+      color: $mainLight;
+      transition: ease-in-out 0.2s;
     }
     &:active {
-        // background-color: $learnMoreLight;
-        // border: 2px $mainDark solid;
-        color: $mainDark;
-        transition: ease-in-out .3s;
-        }
-      }
-      .lotto-info {
-        width: 15rem;
-        height: 6rem;
-        margin-bottom: 2rem;
-        font-size: 0.8rem;
-        // background-color: blue;
-        border: 2px $mainLight dotted;
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
-        // animation-name: lottoInfo;
-        // animation-duration: 3s;
-        transition: all 2s ease;
-      }
-      .toggle-info {
-        margin-bottom: 0rem;
-        opacity: 0;
-        //   transition: all 2s ease;
-      }
+      // background-color: $learnMoreLight;
+      // border: 2px $mainDark solid;
+      color: $mainDark;
+      transition: ease-in-out 0.3s;
+    }
   }
+  .lotto-info {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    background-color: blue;
+    border: 2px $mainLight dotted;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    // animation-name: lottoInfo;
+    // animation-duration: 3s;
+    transition: all 2s ease;
+  }
+  .toggle-info {
+    margin-bottom: 0rem;
+    opacity: 0;
+    //   transition: all 2s ease;
+  }
+}

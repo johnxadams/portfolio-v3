@@ -8,11 +8,11 @@ import WeatherPage from "./WeatherPage/WeatherPage";
 export const Layout = () => {
   return (
     <>
+    <section id={"Landing-Page"} className="landing-page">
+      <Landingpage />
+    </section>
       <section className="weather-page">
         <WeatherPage />
-      </section>
-      <section id={"Landing-Page"} className="landing-page">
-        <Landingpage />
       </section>
       <section id={"gif-page"} className="gif-page">
         <GifPage />

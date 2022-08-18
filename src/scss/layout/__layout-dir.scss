@@ -19,7 +19,7 @@
 }
 .lotto-page {
   position: relative;
-  background-color: $mainDark;
+  background-color: darkred; //$mainDark;
   height: 85vh;
   @include flex-justify-align-dir(center, center, column);
 }
