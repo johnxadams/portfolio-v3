@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 //components
 import LottoApplication from "./LottoApplication/LottoApplication";
-import LottoLearnMore from "./LottoLearnMore/LottoLearnMore";
-import LinkToGifPage from "../LinkToGifPage/LinkToGifPage";
+// import LottoLearnMore from "./LottoLearnMore/LottoLearnMore";
+
 
 export default function LottoPage() {
   const arrOfEmptyStrings = ["", "", "", "", "", "", ""];
@@ -42,7 +42,7 @@ export default function LottoPage() {
         <button onClick={handleLotto}>Try your Luck</button>
       </div>
       {/* <LottoLearnMore/> */}
-      <LinkToGifPage />
+     
     </>
   );
 }

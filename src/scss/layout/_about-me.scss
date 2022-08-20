@@ -1,0 +1,27 @@
+.body-about-me {
+  @include flex-justify-align-dir(space-evenly, center, row);
+  .left-about-me {
+    width: auto;
+    height: auto;
+    background: gold;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+    p:nth-child(2) {
+      font-weight: bold;
+      font-size: 1.8rem;
+      width: 22rem;
+      margin-top: -1.5rem;
+    }
+    p:nth-child(3) {
+      font-size: 1.1rem;
+      width: 22rem;
+    }
+  }
+  .right-img-container {
+    width: 40%;
+    height: 40rem;
+    background: violet;
+  }
+}

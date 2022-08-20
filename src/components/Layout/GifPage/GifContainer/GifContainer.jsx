@@ -1,5 +1,6 @@
 // library
 import React from "react";
+
  /*  
  * - deconstruction, replacing (parameter.props), using {worksArr} instead
  * - in the map(method) - also removing props. since paramtere is deconstructured
@@ -19,7 +20,8 @@ export default function GifContainer(props) {
                 ></img>
               </div>
             </a>
-            {item.name}
+            <p>{item.name}</p>
+            <a className="github-link" href="link">code</a>
           </div>
         ))}
       </div>

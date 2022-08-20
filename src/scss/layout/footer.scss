@@ -1,0 +1,25 @@
+.contact-me-button {
+    width: 13rem;
+    height: 3.5rem;
+    background-color: rgb(76, 142, 199);
+    @include flex-justify-align-dir(center, center, row);
+    margin: -1rem 0 1rem 0;
+    cursor: pointer;
+}
+.social-network-container {
+
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(143, 161, 177);
+    @include flex-justify-align-dir(space-evenly, center, row);
+    div {
+        width: 3rem ;
+        height: 3rem;
+        background-color: bisque;
+        @include flex-justify-align-dir(center, center, row);
+        border-radius: 50%;
+        .social-network-icon {
+            font-size: 1.5rem;
+        }
+    }
+}

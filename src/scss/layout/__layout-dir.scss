@@ -1,30 +1,43 @@
+@import "./navbar";
 @import "./landingpage";
+@import "./about-me";
 @import "./_gif-page";
 @import "./lotto-page";
 @import "./pokemon-page";
 @import "./weather-page";
+@import "./tools-page";
+@import "./footer.scss";
 
 .landing-page {
-  background-color: $mainDark;
+  // background-color: $mainDark;
+
+  // background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+  background-color: $mainDark; //#282828;
+  background-size: 16px 16px;
   height: 85vh;
   // display: flex;
   // justify-content: space-evenly;
   @include flex-justify-align-dir(flex-start, flex-start, row);
 }
-
+.about-me {
+  background-color: darkgray; // $mainDark; //#282828;
+  height: 85vh;
+  // @include flex-justify-align-dir(flex-start, center, row);
+}
 .gif-page {
   background-color: $mainLight;
   height: object-fit;
+  // height: 50vh ;
   @include flex-justify-align-dir(center, center, column);
 }
 .lotto-page {
-  position: relative;
+  // position: relative;
   background-color: darkred; //$mainDark;
   height: 85vh;
   @include flex-justify-align-dir(center, center, column);
 }
 .pokemon-page {
-  position: relative;
+  // position: relative;
   background-color: $mainDark;
   display: flex;
   justify-content: center;
@@ -36,27 +49,13 @@
   // background-color: blue;
   height: 95vh;
 }
-.link-up {
-  color: darkred;
-  width: 5rem;
-  height: 5rem;
-  // background: aliceblue;
-  position: absolute;
-  right: 5rem;
-  bottom: 5rem;
-  rotate: 45deg;
+.tools-page {
+  height: 70vh;
+  background: $mainDark;
   @include flex-justify-align-dir(center, center, row);
-
-  .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #807b7b;
-    cursor: pointer;
-    &:active {
-      border-bottom: 20px solid #c0bdbd;
-      transition: ease-in-out 0.2s;
-    }
-  }
+}
+.footer-page {
+  height: 30vh;
+  background: $mainLight;
+  @include flex-justify-align-dir(center, center, column);
 }

@@ -1,8 +1,7 @@
 // react hook
 import React, { useState } from "react";
 
-// components
-import LinkToGifPage from "../LinkToGifPage/LinkToGifPage";
+
 
 /**
  * fetch data from API using async
@@ -153,7 +152,7 @@ export default function PokemonPage() {
           </div>
         </div>
         {/* <PokestatsContainer/> */}
-        <LinkToGifPage />
+        
       </div>
     </>
   );

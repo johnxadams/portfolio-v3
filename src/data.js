@@ -10,7 +10,7 @@ export const worksArr = [
     alt: "Pokemon API",
   },
   {
-    name: "Landing-Page",
+    name: "Landing-page",
     link: "https://placebear.com/640/360",
     alt: "Pokemon API",
   },
@@ -25,7 +25,7 @@ export const worksArr = [
     alt: "Pokemon API",
   },
   {
-    name: "Parabel",
+    name: "Weather-App",
     link: "https://placebear.com/640/360",
     alt: "Pokemon API",
   },
