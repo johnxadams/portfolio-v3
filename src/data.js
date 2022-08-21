@@ -16,7 +16,7 @@ export const worksArr = [
   {
     name: "Weather-App",
     img: weatherProjectImg,
-    gif: weatherProjectGif,
+    // gif: weatherProjectGif,
     alt: "Pokemon API",
   },
   {
