@@ -29,6 +29,13 @@
         // overflow: hidden;
         object-fit: cover;
         border-radius: 50%;
+        &:hover {
+          border: black 2px solid;
+          position: relative;
+          width: 115%;
+          height: 115%;
+          transition: .3s ease-in-out;
+        }
       }
     }
     p,

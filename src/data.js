@@ -1,32 +1,40 @@
+import weatherProjectImg from "../src/assets/project-img-gif/weatherProjectImg.jpg"
+import weatherProjectGif from "../src/assets/project-img-gif/weatherProjectGif.gif"
 export const worksArr = [
   {
     name: "Lotto",
-    link: "https://placebear.com/640/360",
+    img: "https://placebear.com/640/360",
+    gif: "this gif",
     alt: "Pokemon API",
   },
   {
     name: "Pokemon",
-    link: "https://placebear.com/640/360",
-    alt: "Pokemon API",
-  },
-  {
-    name: "Landing-page",
-    link: "https://placebear.com/640/360",
-    alt: "Pokemon API",
-  },
-  {
-    name: "Pokemon",
-    link: "https://placebear.com/640/360",
-    alt: "Pokemon API",
-  },
-  {
-    name: "Pokemon",
-    link: "https://placebear.com/640/360",
+    img: "https://placebear.com/640/360",
+    gif: "this gif",
     alt: "Pokemon API",
   },
   {
     name: "Weather-App",
-    link: "https://placebear.com/640/360",
+    img: weatherProjectImg,
+    gif: weatherProjectGif,
+    alt: "Pokemon API",
+  },
+  {
+    name: "Pokemon",
+    img: "https://placebear.com/640/360",
+    gif: "this gif",
+    alt: "Pokemon API",
+  },
+  {
+    name: "Pokemon",
+    img: "https://placebear.com/640/360",
+    gif: "this gif",
+    alt: "Pokemon API",
+  },
+  {
+    name: "Weather-App",
+    img: "https://placebear.com/640/360",
+    gif: "this gif",
     alt: "Pokemon API",
   },
 ];

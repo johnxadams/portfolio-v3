@@ -1,16 +1,28 @@
 @import "./scss/abstract/_abstract-dir";
-@import "./scss/layout/_layout-dir"; 
+@import "./scss/layout/_layout-dir";
 @import "./scss/media-query/_media-query-dir";
 
 // .App {
 //   text-align: center;
 // }
 
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 a {
-    all: unset ;
-    // cursor: pointer;
+  all: unset;
+  // cursor: pointer;
 }
