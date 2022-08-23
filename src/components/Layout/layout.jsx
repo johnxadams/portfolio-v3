@@ -11,11 +11,15 @@ import Tools from "./Tools/Tools";
 //data
 import { worksArr } from "../../data";
 import Footer from "./Footer/Footer";
+import Contactpage from "./ContactPage/ContactPage";
 
 export const Layout = () => {
   return (
     <>
-      <section>
+    <section>
+        <Contactpage />
+      </section>
+      {/* <section>
         <NavBar />
       </section>
       <section id={"/"} className="landing-page">
@@ -42,7 +46,7 @@ export const Layout = () => {
       </section>
       <section className="footer-page" >
         <Footer/>
-      </section>
+      </section> */}
     </>
   );
 };
