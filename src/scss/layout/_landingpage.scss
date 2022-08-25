@@ -1,7 +1,7 @@
 
 
 .lp-main {
-  margin-top: 10rem;
+  // margin: auto 2rem;
   width: 80%;
   height: auto;
   // background: rgb(165, 107, 117);
@@ -9,10 +9,12 @@
   margin: 10rem auto;
   color: $mainLight;
   p {
-    font-weight: bold;
+    // font-weight: bold;
+    font-size: 2rem;
+    font-weight: 400;
   }
   .my-name {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .my-skill {
     font-size: 1.5rem;

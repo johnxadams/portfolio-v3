@@ -6,11 +6,14 @@
     .contact-main-left {
       width: 50%;
       height: 100%;
-      background: darkcyan;
+      background: url("../../assets/contact-me-img/stayPresent.jpg")  no-repeat center
+      center/cover;
+      filter: grayscale(0.8);
+      
       .contact-left-head {
         width: 100%;
         height: 5rem;
-        background: darkmagenta;
+        background: $mainDark;
         @include flex-justify-align-dir(flex-start, center, row);
         .go-back {
           width: 8rem;
@@ -22,17 +25,27 @@
           @include flex-justify-align-dir(center, center, row);
         }
       }
+      // img {
+      //   width: 100%;
+      //   height: auto;
+      //   // object-fit: contain;
+      //   position: relative;
+      //   // bottom: 20rem;
+      //   transform: scale(1);
+      //   filter: grayscale(.8);
+      // }
     }
     .contact-main-right {
       width: 50%;
       height: 100%;
-      // background: darkolivegreen;
+      background: $mainDark;
       @include flex-justify-align-dir(space-between, center, column);
     }
     .contact-right-head {
       width: 100%;
       min-height: 5rem;
-      background: darkgoldenrod;
+      background: $mainDark;
+      // box-shadow: 0 5px 20px white; 
     }
     .contact-right-main {
       width: 80%;
@@ -109,7 +122,9 @@
             border-radius: 5px;
             outline: inherit;
             background: none;
-            border: 2px solid black;
+            border: 2px solid $mainLight;
+            color: $mainLight;
+            letter-spacing: 2px;
             cursor: pointer;
             &:active {
               background: gray;
@@ -123,7 +138,23 @@
       // position: relative;
       width: 100%;
       min-height: 5rem;
-      background: darkorchid;
+      // background: darkorchid;
+      @include flex-justify-align-dir(center, center, row);
+      .contact-social-network-container {
+        width: 20rem;
+        height: 4rem;
+        @include flex-justify-align-dir(space-evenly, center, row);
+        div {
+          width: 3rem;
+          height: 3rem;
+          background-color: bisque;
+          @include flex-justify-align-dir(center, center, row);
+          border-radius: 50%;
+          .contact-social-network-icon {
+            font-size: 1.5rem;
+          }
+        }
+      }
     }
   }
   

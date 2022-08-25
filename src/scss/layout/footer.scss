@@ -1,4 +1,7 @@
-.contact-me-button {
+.footer-container {
+    min-height: 20rem;
+    @include flex-justify-align-dir(center, center, column);
+  .contact-me-button {
     width: 13rem;
     height: 3.5rem;
     border-radius: 6px;
@@ -10,20 +13,20 @@
     @include flex-justify-align-dir(center, center, row);
     margin: -1rem 0 1rem 0;
     cursor: pointer;
-}
-.social-network-container {
-
+  }
+  .social-network-container {
     width: 20rem;
     height: 4rem;
     @include flex-justify-align-dir(space-evenly, center, row);
     div {
-        width: 3rem ;
-        height: 3rem;
-        background-color: bisque;
-        @include flex-justify-align-dir(center, center, row);
-        border-radius: 50%;
-        .social-network-icon {
-            font-size: 1.5rem;
-        }
+      width: 3rem;
+      height: 3rem;
+      background-color: bisque;
+      @include flex-justify-align-dir(center, center, row);
+      border-radius: 50%;
+      .social-network-icon {
+        font-size: 1.5rem;
+      }
     }
+  }
 }

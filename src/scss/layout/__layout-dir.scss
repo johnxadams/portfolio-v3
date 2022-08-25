@@ -18,10 +18,10 @@
   // background-size: 16px 16px;
   animation: gradient 15s ease infinite;
   background-size: 500% 500%;
-  height: 85vh;
+  min-height: 75vh;
   // display: flex;
   // justify-content: space-evenly;
-  @include flex-justify-align-dir(flex-start, flex-start, row);
+  @include flex-justify-align-dir(flex-start, center, row);
 
 }
 @keyframes gradient {
@@ -36,42 +36,43 @@
   }
 }
 .about-me {
-  background-color: darkgray; // $mainDark; //#282828;
-  height: 85vh;
+  background-color:  $mainDark; //#282828;
+  min-height: auto;
   // @include flex-justify-align-dir(flex-start, center, row);
 }
 .gif-page {
   background-color: $mainLight;
-  height: object-fit;
+  min-height: object-fit;
   // height: 50vh ;
   @include flex-justify-align-dir(center, center, column);
 }
 .lotto-page {
   // position: relative;
-  background-color: darkred; //$mainDark;
-  height: 85vh;
+  background-color: #363535;//$mainDark;
+  min-height: auto;
   @include flex-justify-align-dir(center, center, column);
 }
 .pokemon-page {
   // position: relative;
   background-color: $mainDark;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 90vh;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+  @include flex-justify-align-dir(center, center, row);
+  min-height: auto;
 }
 .weather-page {
   // background-color: blue;
   height: 95vh;
 }
 .tools-page {
-  height: 70vh;
+  min-height: 70vh;
   background: $mainDark;
   @include flex-justify-align-dir(center, center, row);
 }
 .footer-page {
-  height: 30vh;
+  min-height: auto;
   // background: $mainLight;
   background-color: rgb(143, 161, 177);
   @include flex-justify-align-dir(center, center, column);

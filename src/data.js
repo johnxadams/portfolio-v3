@@ -20,6 +20,7 @@ export const worksArr = [
     img: weatherProjectImg,
     gif: weatherProjectGif,
     alt: "WeatherApp",
+    projectClassName: "weather-img-container",
     gitHubLink: "https://github.com/johnxadams/portfolio-v3/blob/main/src/components/Layout/WeatherPage/WeatherPage.jsx",
   },
   {
@@ -27,6 +28,7 @@ export const worksArr = [
     img: "https://placebear.com/640/360",
     gif: "this gif",
     alt: "Pokemon API",
+    projectClassName: "weather-img",
     gitHubLink: "",
   },
   {
@@ -34,6 +36,7 @@ export const worksArr = [
     img: "https://placebear.com/640/360",
     gif: "this gif",
     alt: "Pokemon API",
+    projectClassName: "weather-img",
     gitHubLink: "",
   },
   {
@@ -41,6 +44,7 @@ export const worksArr = [
     img: "https://placebear.com/640/360",
     gif: "this gif",
     alt: "Pokemon API",
+    projectClassName: "weather-img",
     gitHubLink: "",
   },
 ];

@@ -1,27 +1,42 @@
 .body-about-me {
   @include flex-justify-align-dir(space-evenly, center, row);
   .left-about-me {
-    width: auto;
+    width: 50%;
     height: auto;
-    background: gold;
+    background: $mainDark;
+    @include flex-justify-align-dir(center, center, column);
 
     h3 {
       font-size: 1.5rem;
+      width: 29rem;
+      color: cadetblue;
+      // font-weight: 900;
     }
     p:nth-child(2) {
       font-weight: bold;
       font-size: 1.8rem;
-      width: 22rem;
+      width: 29rem;
       margin-top: -1.5rem;
+      color: $mainLight;
     }
     p:nth-child(3) {
       font-size: 1.1rem;
-      width: 22rem;
+      width: 29rem;
+      color: $mainLight;
     }
   }
   .right-img-container {
-    width: 40%;
-    height: 40rem;
-    background: violet;
+    width: 50%;
+    min-height: auto;
+    // background: #585;
+    // background-image: url(.././../assets/about-me-img/aboutme-prototype.jpg);
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      @include flex-justify-align-dir(center, center, row);
+img {
+  object-fit: contain;
+    width: 100%;
+}
   }
 }

@@ -33,6 +33,7 @@ export default function LottoPage() {
 
   return (
     <>
+    <div className="lotto-container">
       <LottoApplication
         outputLottoNumbers={lottoState}
         emptyBoxes={arrOfEmptyStrings}
@@ -42,7 +43,7 @@ export default function LottoPage() {
         <button onClick={handleLotto}>Try your Luck</button>
       </div>
       {/* <LottoLearnMore/> */}
-     
+      </div>
     </>
   );
 }

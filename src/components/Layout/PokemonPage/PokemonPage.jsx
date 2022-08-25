@@ -88,7 +88,7 @@ export default function PokemonPage() {
   // console.log("pokeStats ", pokeStats);
   return (
     <>
-      <div>
+      <div className="pokemon-container">
         <form id="form-tag">
           <input
             onChange={handlePokemonName}
@@ -101,7 +101,7 @@ export default function PokemonPage() {
             Search
           </button>
         </form>
-        <div id="poke-container">
+        <div id="pokedex-container">
           {/*
            * I needed to grab the classes from the useState.setPokemonData,
            * so the styling appears  only if I click on the button

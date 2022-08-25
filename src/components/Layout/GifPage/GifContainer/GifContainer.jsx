@@ -23,18 +23,24 @@ export default function GifContainer(props) {
         {props.worksArr.map((item, i) => (
           <div className="project-card" key={i}>
             <a href={`#${item.name}`}>
-              <div className="gif-circle">
-                <img
+              {/* Every img container get its own class, - in this case i can add background-img in the css of each className*/}
+              <div className={item.projectClassName}>
+                {/* <img
                   className="img-of-work"
-                  src={item.gif}
+                  src={item.img}
                   alt={item.alt}
                   // onMouseEnter={handleMouseEnter}
-                ></img>
+                ></img> */}
               </div>
             </a>
             <div className="project-card-description">
               <p className="project-name">{item.name}</p>
-              <a className="github-link" href={item.gitHubLink} target="_blank" rel="noreferrer">
+              <a
+                className="github-link"
+                href={item.gitHubLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 code
               </a>
             </div>

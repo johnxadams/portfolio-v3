@@ -1,6 +1,6 @@
 .gif-container {
   /* width: 3rem; */
-  height: auto;
+  min-height: auto;
   padding-top: 5rem;
   width: 50rem;
   background-color: aquamarine;
@@ -13,31 +13,41 @@
     background-color: goldenrod;
     border: 2px black solid;
     margin: 2rem;
-    .gif-circle {
+    .weather-img-container{
       position: relative;
       border: 2px black solid;
       width: 75%;
       height: 75%;
       border-radius: 50%;
       margin: 10px auto;
+      background-image: url("../../assets/project-img-gif/weatherProjectImg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 300%;
+      // overflow: hidden;
+      background-position-y: 0%;
       @include flex-justify-align-dir(center, center, row);
+      // background-position-x: 1rem;
+      //background scale1.1 while  div stays the same 
       // display: flex;
       // justify-content: center;
       // align-items: center;
-      overflow: hidden;
       cursor: pointer;
-      .img-of-work {
-        // display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-      &:hover img {
-        transform: scale(1.1);
+      // .img-of-work {
+      //   // display: block;
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 100%;
+      //   object-fit: cover;
+      //   border-radius: 50%;
+      //   transition: 0.3s ease-in-out;
+      // }
+      &:hover {
+        // transform: scale(1.1);
         // transform-origin: 50% 50%;
         transition: 0.3s ease-in-out;
+        background-image: url("../../assets/project-img-gif/weatherProjectGif.gif");
+        background-size: 350%;
       }
     }
     .project-card-description {

@@ -34,7 +34,7 @@ const isHomePage = pathname === "/";
       <section id={"projects"} className="gif-page">
         <GifPage />
       </section>
-      {/* <section id={worksArr[5].name} className="weather-page">
+      <section id={worksArr[5].name} className="weather-page">
         <WeatherPage />
       </section>
 
@@ -47,7 +47,7 @@ const isHomePage = pathname === "/";
       <section id={"tools"} className="tools-page" >
         <Tools />
       </section>
-      */}
+     
      
       {isHomePage &&
       <section className="footer-page">

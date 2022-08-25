@@ -1,3 +1,8 @@
+.lotto-container {
+  // background: green;
+  min-height: 35rem;
+
+  // @include flex-justify-align-dir(center, center, column);
 .topic-container {
   display: flex;
   align-items: center;
@@ -15,7 +20,7 @@
     font-size: 2rem;
   }
 }
-.lotto-container {
+.lotto-numbers-container {
   display: flex;
   justify-content: center;
   .lottoDiv {
@@ -91,6 +96,7 @@ button:nth-child(2) {
     background-color: $mainLight;
     transition: ease-in-out 0.2s;
   }
+}
 }
 // .lotto-learn-more-container {
 //   width: auto;

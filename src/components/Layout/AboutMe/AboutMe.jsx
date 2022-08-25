@@ -1,4 +1,5 @@
 import React from "react";
+import aboutmePrototype from "../../../assets/about-me-img/aboutmePrototype.jpg"
 
 export default function AboutMe() {
   return (
@@ -17,7 +18,9 @@ export default function AboutMe() {
           my experience and help your business grow.
         </p>
       </section>
-      <section className="right-img-container">right</section>
+      <section className="right-img-container">
+        <img src={aboutmePrototype} alt="" />
+      </section>
     </div>
   );
 }
