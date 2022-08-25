@@ -3,7 +3,7 @@
 
 // data
 // import {worksArr} from "../../../../data";
- /*  
+/*
  * - deconstruction, replacing (parameter.props), using {worksArr} instead
  * - in the map(method) - also removing props. since paramtere is deconstructured
  *  */
@@ -32,8 +32,12 @@ export default function GifContainer(props) {
                 ></img>
               </div>
             </a>
-            <p>{item.name}</p>
-            <a className="github-link" href="link">code</a>
+            <div className="project-card-description">
+              <p className="project-name">{item.name}</p>
+              <a className="github-link" href={item.gitHubLink} target="_blank" rel="noreferrer">
+                code
+              </a>
+            </div>
           </div>
         ))}
       </div>

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+
+//librabries
+import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 
 export default function NavBar() {
   const [stateOpacity, setStateOpacity] = useState(false);
@@ -31,9 +34,7 @@ export default function NavBar() {
       ? setStateProjects(true)
       : setStateProjects(false);
 
-    scrollValue > 4300
-      ? setStateTools(true)
-      : setStateTools(false);
+    scrollValue > 4300 ? setStateTools(true) : setStateTools(false);
   };
   window.addEventListener("scroll", changeNavBarOpacityOnScroll);
   window.addEventListener("scroll", changeNavigationOnScroll);
@@ -43,8 +44,7 @@ export default function NavBar() {
       <nav className={stateOpacity ? "navPacity" : null}>
         <ul>
           <li className={stateHome ? "nav-item" : null}>
-
-            <Link
+            <LinkScroll
               to="/"
               spy={true}
               smooth={true}
@@ -53,11 +53,10 @@ export default function NavBar() {
               className={stateHome ? "nav-link" : null}
             >
               Home
-            </Link>
+            </LinkScroll>
           </li>
           <li className={stateAboutMe ? "nav-item" : null}>
-
-            <Link
+            <LinkScroll
               to="about"
               spy={true}
               smooth={true}
@@ -66,11 +65,10 @@ export default function NavBar() {
               className={stateAboutMe ? "nav-link" : null}
             >
               About Me
-            </Link>
+            </LinkScroll>
           </li>
           <li className={stateProjects ? "nav-item" : null}>
-            
-            <Link
+            <LinkScroll
               to="projects"
               spy={true}
               smooth={true}
@@ -79,10 +77,10 @@ export default function NavBar() {
               className={stateProjects ? "nav-link" : null}
             >
               My Project
-            </Link>
+            </LinkScroll>
           </li>
           <li className={stateTools ? "nav-item" : null}>
-            <Link
+            <LinkScroll
               to="tools"
               spy={true}
               smooth={true}
@@ -91,9 +89,12 @@ export default function NavBar() {
               className={stateTools ? "nav-link" : null}
             >
               Tools
-            </Link>
+            </LinkScroll>
           </li>
         </ul>
+        <LinkRouter to={"/contact"}>
+          <div className="navbar-contact-me">Contact Me</div>
+        </LinkRouter>
       </nav>
     </>
   );

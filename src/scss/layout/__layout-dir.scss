@@ -72,6 +72,7 @@
 }
 .footer-page {
   height: 30vh;
-  background: $mainLight;
+  // background: $mainLight;
+  background-color: rgb(143, 161, 177);
   @include flex-justify-align-dir(center, center, column);
 }

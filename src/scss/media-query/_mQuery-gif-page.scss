@@ -60,11 +60,11 @@
 // #5 XXL-wide-screen
 @media only screen and (min-width: 1400px){
     .gif-container {
-        width: 65rem;
+       min-width: 85rem;
         .project-card {
-        width: 14rem;
-        height: 14rem;
-        margin: 2rem;
+        min-width: 22rem;
+        min-height: 22rem;
+        margin: 1rem;
         }
     }
 }

@@ -11,27 +11,30 @@ import Tools from "./Tools/Tools";
 //data
 import { worksArr } from "../../data";
 import Footer from "./Footer/Footer";
-import Contactpage from "./ContactPage/ContactPage";
+import { useLocation } from "react-router-dom";
+
+
 
 export const Layout = () => {
+
+  const { pathname } = useLocation();
+const isHomePage = pathname === "/";
   return (
     <>
-    <section>
-        <Contactpage />
-      </section>
-      {/* <section>
+    
+      <section>
         <NavBar />
       </section>
-      <section id={"/"} className="landing-page">
+      {/* <section id={"/"} className="landing-page">
         <Landingpage />
       </section>
       <section id={"about"} className="about-me">
         <AboutMe />
-      </section>
+      </section> */}
       <section id={"projects"} className="gif-page">
         <GifPage />
       </section>
-      <section id={worksArr[5].name} className="weather-page">
+      {/* <section id={worksArr[5].name} className="weather-page">
         <WeatherPage />
       </section>
 
@@ -44,9 +47,13 @@ export const Layout = () => {
       <section id={"tools"} className="tools-page" >
         <Tools />
       </section>
-      <section className="footer-page" >
-        <Footer/>
-      </section> */}
+      */}
+     
+      {isHomePage &&
+      <section className="footer-page">
+        <Footer />
+      </section>
+      }
     </>
   );
 };

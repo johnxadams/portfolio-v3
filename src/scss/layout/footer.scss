@@ -1,6 +1,11 @@
 .contact-me-button {
     width: 13rem;
     height: 3.5rem;
+    border-radius: 6px;
+    color: $mainDark;
+    // font-weight: bold;
+    font-size: 1.2rem;
+    border: $mainDark 2px solid;
     background-color: rgb(76, 142, 199);
     @include flex-justify-align-dir(center, center, row);
     margin: -1rem 0 1rem 0;
@@ -10,7 +15,6 @@
 
     width: 20rem;
     height: 4rem;
-    background-color: rgb(143, 161, 177);
     @include flex-justify-align-dir(space-evenly, center, row);
     div {
         width: 3rem ;

@@ -11,6 +11,16 @@
         width: 100%;
         height: 5rem;
         background: darkmagenta;
+        @include flex-justify-align-dir(flex-start, center, row);
+        .go-back {
+          width: 8rem;
+          height: 4rem;
+          background: green;
+          margin-left: 3rem;
+          font-size: 1.5rem;
+          cursor: pointer;
+          @include flex-justify-align-dir(center, center, row);
+        }
       }
     }
     .contact-main-right {
