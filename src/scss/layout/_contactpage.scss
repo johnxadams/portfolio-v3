@@ -1,160 +1,160 @@
 .contact-main {
-    width: 100%;
-    height: 100vh;
-    // background: grey;
-    @include flex-justify-align-dir(flex-start, flex-start, row);
-    .contact-main-left {
-      width: 50%;
-      height: 100%;
-      background: url("../../assets/contact-me-img/stayPresent.jpg")  no-repeat center
-      center/cover;
-      filter: grayscale(0.8);
-      
-      .contact-left-head {
-        width: 100%;
-        height: 5rem;
-        background: $mainDark;
-        @include flex-justify-align-dir(flex-start, center, row);
-        .go-back {
-          width: 8rem;
-          height: 4rem;
-          background: green;
-          margin-left: 3rem;
-          font-size: 1.5rem;
-          cursor: pointer;
-          @include flex-justify-align-dir(center, center, row);
-        }
-      }
-      // img {
-      //   width: 100%;
-      //   height: auto;
-      //   // object-fit: contain;
-      //   position: relative;
-      //   // bottom: 20rem;
-      //   transform: scale(1);
-      //   filter: grayscale(.8);
-      // }
-    }
-    .contact-main-right {
-      width: 50%;
-      height: 100%;
-      background: $mainDark;
-      @include flex-justify-align-dir(space-between, center, column);
-    }
-    .contact-right-head {
+  width: 100%;
+  height: 100vh;
+  // background: grey;
+  @include flex-justify-align-dir(flex-start, flex-start, row);
+  .contact-main-left {
+    width: 50%;
+    height: 100%;
+    background: url("../../assets/contact-me-img/stayPresent.jpg") no-repeat
+      center center/cover;
+    filter: grayscale(0.8);
+
+    .contact-left-head {
       width: 100%;
-      min-height: 5rem;
+      height: 5rem;
       background: $mainDark;
-      // box-shadow: 0 5px 20px white; 
-    }
-    .contact-right-main {
-      width: 80%;
-      min-height: 40rem;
-      // background: goldenrod;
-      .text-me-message {
-        width: 100%;
-        min-height: 8rem;
-        background: darkkhaki;
+      @include flex-justify-align-dir(flex-start, center, row);
+      .go-back {
+        width: 8rem;
+        height: 4rem;
+        background: green;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        @include flex-justify-align-dir(center, center, row);
       }
-      form {
+    }
+    // img {
+    //   width: 100%;
+    //   height: auto;
+    //   // object-fit: contain;
+    //   position: relative;
+    //   // bottom: 20rem;
+    //   transform: scale(1);
+    //   filter: grayscale(.8);
+    // }
+  }
+  .contact-main-right {
+    width: 50%;
+    height: 100%;
+    background: $mainDark;
+    @include flex-justify-align-dir(space-between, center, column);
+  }
+  .contact-right-head {
+    width: 100%;
+    min-height: 5rem;
+    background: $mainDark;
+    // box-shadow: 0 5px 20px white;
+  }
+  .contact-right-main {
+    width: 80%;
+    min-height: 40rem;
+    // background: goldenrod;
+    .text-me-message {
+      width: 100%;
+      min-height: 8rem;
+      background: darkkhaki;
+    }
+    form {
+      width: 100%;
+      min-height: 32rem;
+      // background: darkblue;
+      @include flex-justify-align-dir(space-between, center, column);
+      div:first-child,
+      div:nth-child(2),
+      div:nth-child(3) {
         width: 100%;
-        min-height: 32rem;
-        // background: darkblue;
-        @include flex-justify-align-dir(space-between, center, column);
-        div:first-child,
-        div:nth-child(2),
-        div:nth-child(3) {
+        height: 4rem;
+        background: rgb(255, 255, 255);
+        margin-top: 0.5rem;
+        border-bottom: 2px solid gray;
+        input {
           width: 100%;
-          height: 4rem;
-          background: rgb(255, 255, 255);
-          margin-top: 0.5rem;
-          border-bottom: 2px solid gray;
-          input {
-            width: 100%;
-            margin: 0;
-            min-height: 100%;
-            border: none;
-            border-radius: 0px;
-            background: none;
+          margin: 0;
+          min-height: 100%;
+          border: none;
+          border-radius: 0px;
+          background: none;
+          font-size: 1.5rem;
+          padding-top: 1rem;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
             font-size: 1.5rem;
-            padding-top: 1rem;
-            &:focus {
-              outline: none;
-            }
-            &::placeholder {
-              font-size: 1.5rem;
-            }
           }
         }
-        div:nth-child(4) {
+      }
+      div:nth-child(4) {
+        width: 100%;
+        height: 12rem;
+        background: rgb(255, 255, 255);
+        margin-top: 0.5rem;
+        border-bottom: 2px solid gray;
+        textarea {
           width: 100%;
-          height: 12rem;
-          background: rgb(255, 255, 255);
-          margin-top: 0.5rem;
-          border-bottom: 2px solid gray;
-          textarea {
-            width: 100%;
-            margin: 0;
-            min-height: 100%;
-            border: none;
-            border-radius: 0px;
-            background: none;
+          margin: 0;
+          min-height: 100%;
+          border: none;
+          border-radius: 0px;
+          background: none;
+          font-size: 1.5rem;
+          padding-left: 0.2rem;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
             font-size: 1.5rem;
             padding-left: 0.2rem;
-            &:focus {
-              outline: none;
-            }
-            &::placeholder {
-              font-size: 1.5rem;
-              padding-left: 0.2rem;
-            }
-          }
-        }
-        div:nth-child(5) {
-          width: 100%;
-          height: 7rem;
-          // background: darkturquoise;
-          margin-top: 0.5rem;
-          @include flex-justify-align-dir(flex-end, center, row);
-          input {
-            height: 3rem;
-            width: 12rem;
-            border-radius: 5px;
-            outline: inherit;
-            background: none;
-            border: 2px solid $mainLight;
-            color: $mainLight;
-            letter-spacing: 2px;
-            cursor: pointer;
-            &:active {
-              background: gray;
-              transition: .3s ease-in-out;
-            }
           }
         }
       }
-    }
-    .contact-right-bottom {
-      // position: relative;
-      width: 100%;
-      min-height: 5rem;
-      // background: darkorchid;
-      @include flex-justify-align-dir(center, center, row);
-      .contact-social-network-container {
-        width: 20rem;
-        height: 4rem;
-        @include flex-justify-align-dir(space-evenly, center, row);
-        div {
-          width: 3rem;
+      div:nth-child(5) {
+        width: 100%;
+        height: 7rem;
+        // background: darkturquoise;
+        margin-top: 0.5rem;
+        @include flex-justify-align-dir(flex-end, center, row);
+        input {
           height: 3rem;
-          background-color: bisque;
-          @include flex-justify-align-dir(center, center, row);
-          border-radius: 50%;
-          .contact-social-network-icon {
-            font-size: 1.5rem;
+          width: 12rem;
+          border-radius: 5px;
+          outline: inherit;
+          background: none;
+          border: 2px solid $mainLight;
+          color: $mainLight;
+          letter-spacing: 2px;
+          cursor: pointer;
+          &:active {
+            background: gray;
+            transition: 0.3s ease-in-out;
           }
         }
       }
     }
   }
-  
+  .contact-right-bottom {
+    // position: relative;
+    width: 100%;
+    min-height: 5rem;
+    // background: darkorchid;
+    @include flex-justify-align-dir(center, center, row);
+    .contact-social-network-container {
+      width: 20rem;
+      height: 4rem;
+      @include flex-justify-align-dir(space-evenly, center, row);
+      div {
+        width: 3rem;
+        height: 3rem;
+        background-color: bisque;
+        @include flex-justify-align-dir(center, center, row);
+        border-radius: 50%;
+        .contact-social-network-icon {
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

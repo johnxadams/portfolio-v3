@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
 //librabries
 import { Link as LinkScroll } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
+
+//styled-components
+import { ContactMeNav } from "../../StyledComponents/Button";
 
 export default function NavBar() {
   const [stateOpacity, setStateOpacity] = useState(false);
@@ -93,9 +97,17 @@ export default function NavBar() {
           </li>
         </ul>
         <LinkRouter to={"/contact"}>
-          <div className="navbar-contact-me">Contact Me</div>
+          {/* <div className="navbar-contact-me">Contact Me</div> */}
+          <ContactMeNav>Contact Me</ContactMeNav>
         </LinkRouter>
+        
       </nav>
     </>
   );
 }
+
+const setupBorder = ({width, type, color}) => {
+  return `${width}px ${type} ${color}`
+}
+
+

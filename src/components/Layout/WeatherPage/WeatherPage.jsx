@@ -8,11 +8,15 @@ import { monthData } from "../../../data";
 import axios from "axios";
 // import 'dotenv/config';
 
+
 // styles
 // import "../../../scss/layout";
 
 //icons
 import { WiThermometer, WiHumidity, WiStrongWind } from "react-icons/wi";
+
+
+
 console.log("process: ", process.env);
 export default function WeatherPage() {
   const [data, setData] = useState({});
@@ -21,6 +25,8 @@ export default function WeatherPage() {
   const [bgWeather, setBgWeather] = useState("clouds");
  
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
+
+console.log("the process",process.env)
 
   const searchLocation = (e) => {
     if (e.key === "Enter") {

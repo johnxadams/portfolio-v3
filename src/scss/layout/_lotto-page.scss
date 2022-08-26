@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
 }
-button {
+.button-container > button {
   font-size: 1rem;
   font-weight: bold;
   font-family: mukta, sans-serif;
@@ -65,14 +65,14 @@ button {
   cursor: pointer;
 }
 
-button:nth-child(1) {
+.reset-btn {
   width: 7rem;
   border: $mainLight 3px solid;
   color: $mainLight;
   background-color: $mainDark;
   &:hover {
     background: $mainLight;
-    border: 3px $hoverLottoDiv solid;
+    // border: 3px $hoverLottoDiv solid;
     color: $hoverLottoDiv;
     transition: ease-in-out 0.2s;
   }
@@ -81,14 +81,14 @@ button:nth-child(1) {
     transition: ease-in-out 0.2s;
   }
 }
-button:nth-child(2) {
+.try-luck-btn {
   width: 13rem;
   border: $mainDark 3px solid;
   background: $mainLight;
   color: $mainDark;
   &:hover {
     background: $mainDark;
-    border: 3px $hoverLottoDiv solid;
+    // border: 3px $hoverLottoDiv solid;
     color: $hoverLottoDiv;
     transition: ease-in-out 0.2s;
   }

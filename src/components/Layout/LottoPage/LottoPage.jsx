@@ -39,8 +39,8 @@ export default function LottoPage() {
         emptyBoxes={arrOfEmptyStrings}
       />
       <div className="button-container">
-        <button onClick={handleReset}>Reset</button>
-        <button onClick={handleLotto}>Try your Luck</button>
+        <button className="reset-btn" onClick={handleReset}>Reset</button>
+        <button className="try-luck-btn" onClick={handleLotto}>Try your Luck</button>
       </div>
       {/* <LottoLearnMore/> */}
       </div>

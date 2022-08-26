@@ -8,6 +8,10 @@ import emailjs from "@emailjs/browser";
 // reactIcons
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+// import {IoChevronBackOutline}
+
+// styled-component
+import { HomeBtn } from "../../StyledComponents/Button";
 
 //images
 // import stayPresent from "../../../assets/contact-me-img/stayPresent.jpg"
@@ -44,7 +48,8 @@ export default function Contactpage() {
           <div className="contact-left-head">
             {" "}
             <Link to="/">
-              <div className="go-back">go back</div>
+              <HomeBtn>go back</HomeBtn>
+              {/* <div className="go-back">go back</div> */}
             </Link>
           </div>
           {/* <img src={stayPresent} alt="" /> */}

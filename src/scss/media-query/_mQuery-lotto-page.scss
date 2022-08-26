@@ -1,257 +1,257 @@
-// #0
-@media only screen and (max-width: 576px) {
-  .topic-container {
-    h1 {
-      font-size: 2.5rem;
-    }
-    span {
-      font-size: 1.5rem;
-    }
-  }
-  .lotto-container {
-    .lottoDiv {
-      border: 2px solid $mainLight;
-      width: 2rem;
-      height: 2rem;
-      margin: 0.5rem;
-      font-size: 0.9rem;
-      &:hover {
-        border: 2px solid $hoverLottoDiv;
-      }
-    }
-  }
-  button {
-    font-size: 0.8rem;
-    margin: 0.5rem;
-    height: 1.8rem;
-  }
-  button:nth-child(1) {
-    width: 4.5rem;
-    border: $mainLight 1.5px solid;
-    &:hover {
-      border: $hoverLottoDiv 1.5px solid;
-    }
-  }
-  button:nth-child(2) {
-    width: 8rem;
-    border: $mainDark 1.5px solid;
-    &:hover {
-      border: $hoverLottoDiv 1.5px solid;
-    }
-  }
-  .lotto-learn-more-container {
-    .learn-more-circle {
-      font-size: 0.55rem;
-      margin-top: 1rem;
-    }
-    .lotto-info {
-      width: 12rem;
-      height: auto;
-      margin-bottom: 5rem;
-      font-size: 0.7rem;
-    }
-    .toggle-info {
-      margin-bottom: 4rem;
-    }
-  }
-}
+// // #0
+// @media only screen and (max-width: 576px) {
+//   .topic-container {
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+//     span {
+//       font-size: 1.5rem;
+//     }
+//   }
+//   .lotto-container {
+//     .lottoDiv {
+//       border: 2px solid $mainLight;
+//       width: 2rem;
+//       height: 2rem;
+//       margin: 0.5rem;
+//       font-size: 0.9rem;
+//       &:hover {
+//         border: 2px solid $hoverLottoDiv;
+//       }
+//     }
+//   }
+//   button {
+//     font-size: 0.8rem;
+//     margin: 0.5rem;
+//     height: 1.8rem;
+//   }
+//   button:nth-child(1) {
+//     width: 4.5rem;
+//     border: $mainLight 1.5px solid;
+//     &:hover {
+//       border: $hoverLottoDiv 1.5px solid;
+//     }
+//   }
+//   button:nth-child(2) {
+//     width: 8rem;
+//     border: $mainDark 1.5px solid;
+//     &:hover {
+//       border: $hoverLottoDiv 1.5px solid;
+//     }
+//   }
+//   .lotto-learn-more-container {
+//     .learn-more-circle {
+//       font-size: 0.55rem;
+//       margin-top: 1rem;
+//     }
+//     .lotto-info {
+//       width: 12rem;
+//       height: auto;
+//       margin-bottom: 5rem;
+//       font-size: 0.7rem;
+//     }
+//     .toggle-info {
+//       margin-bottom: 4rem;
+//     }
+//   }
+// }
 
-// #1
-@media only screen and (min-width: 576px) {
-  .topic-container {
-    h1 {
-      font-size: 3rem;
-    }
-    span {
-      font-size: 1.7rem;
-    }
-  }
-  .lotto-container {
-    .lottoDiv {
-      border: 3px solid $mainLight;
-      width: 3rem;
-      height: 3rem;
-      margin: 0.6rem;
-      font-size: 1.2rem;
-      &:hover {
-        border: 2px solid $hoverLottoDiv;
-      }
-    }
-  }
-  button {
-    font-size: 1rem;
-    margin: 0.8rem;
-    height: 2.2rem;
-  }
-  button:nth-child(1) {
-    width: 5.5rem;
-    border: $mainLight 2px solid;
-    &:hover {
-      border: $hoverLottoDiv 2px solid;
-    }
-  }
-  button:nth-child(2) {
-    width: 9.5rem;
-    border: $mainDark 2px solid;
-    &:hover {
-      border: $hoverLottoDiv 2px solid;
-    }
-  }
-  .lotto-learn-more-container {
-    .learn-more-circle {
-      font-size: 0.7rem;
-      // margin-top: 1rem;
-      margin: 1rem 0 1rem 0;
-    }
-    .lotto-info {
-      width: 12rem;
-      height: auto;
-      margin-bottom: 5rem;
-      font-size: 0.7rem;
-    }
-    .toggle-info {
-      margin-bottom: 3rem;
-    }
-  }
-}
+// // #1
+// @media only screen and (min-width: 576px) {
+//   .topic-container {
+//     h1 {
+//       font-size: 3rem;
+//     }
+//     span {
+//       font-size: 1.7rem;
+//     }
+//   }
+//   .lotto-container {
+//     .lottoDiv {
+//       border: 3px solid $mainLight;
+//       width: 3rem;
+//       height: 3rem;
+//       margin: 0.6rem;
+//       font-size: 1.2rem;
+//       &:hover {
+//         border: 2px solid $hoverLottoDiv;
+//       }
+//     }
+//   }
+//   button {
+//     font-size: 1rem;
+//     margin: 0.8rem;
+//     height: 2.2rem;
+//   }
+//   button:nth-child(1) {
+//     width: 5.5rem;
+//     border: $mainLight 2px solid;
+//     &:hover {
+//       border: $hoverLottoDiv 2px solid;
+//     }
+//   }
+//   button:nth-child(2) {
+//     width: 9.5rem;
+//     border: $mainDark 2px solid;
+//     &:hover {
+//       border: $hoverLottoDiv 2px solid;
+//     }
+//   }
+//   .lotto-learn-more-container {
+//     .learn-more-circle {
+//       font-size: 0.7rem;
+//       // margin-top: 1rem;
+//       margin: 1rem 0 1rem 0;
+//     }
+//     .lotto-info {
+//       width: 12rem;
+//       height: auto;
+//       margin-bottom: 5rem;
+//       font-size: 0.7rem;
+//     }
+//     .toggle-info {
+//       margin-bottom: 3rem;
+//     }
+//   }
+// }
 
-// #2
-@media only screen and (min-width: 769px) {
-  .topic-container {
-    h1 {
-      font-size: 3.2rem;
-    }
-    span {
-      font-size: 1.8rem;
-    }
-  }
-  .lotto-container {
-    .lottoDiv {
-      border: 4px solid $mainLight;
-      width: 4rem;
-      height: 4rem;
-      font-size: 1.5rem;
-      &:hover {
-        border: 4px solid $hoverLottoDiv;
-      }
-    }
-  }
-  button {
-    font-size: 1rem;
-    margin: 1rem;
-    height: 2.7rem;
-  }
-  button:nth-child(1) {
-    width: 6rem;
-    border: $mainLight 3px solid;
-    &:hover {
-      border: 3px $hoverLottoDiv solid;
-    }
-  }
-  button:nth-child(2) {
-    width: 11rem;
-    border: $mainDark 3px solid;
-    &:hover {
-      border: $hoverLottoDiv 3px solid;
-    }
-  }
-  .lotto-learn-more-container {
-    .lotto-info {
-      width: 15rem;
-    }
-  }
-}
+// // #2
+// @media only screen and (min-width: 769px) {
+//   .topic-container {
+//     h1 {
+//       font-size: 3.2rem;
+//     }
+//     span {
+//       font-size: 1.8rem;
+//     }
+//   }
+//   .lotto-container {
+//     .lottoDiv {
+//       border: 4px solid $mainLight;
+//       width: 4rem;
+//       height: 4rem;
+//       font-size: 1.5rem;
+//       &:hover {
+//         border: 4px solid $hoverLottoDiv;
+//       }
+//     }
+//   }
+//   button {
+//     font-size: 1rem;
+//     margin: 1rem;
+//     height: 2.7rem;
+//   }
+//   button:nth-child(1) {
+//     width: 6rem;
+//     border: $mainLight 3px solid;
+//     &:hover {
+//       border: 3px $hoverLottoDiv solid;
+//     }
+//   }
+//   button:nth-child(2) {
+//     width: 11rem;
+//     border: $mainDark 3px solid;
+//     &:hover {
+//       border: $hoverLottoDiv 3px solid;
+//     }
+//   }
+//   .lotto-learn-more-container {
+//     .lotto-info {
+//       width: 15rem;
+//     }
+//   }
+// }
 
-// #3
-@media only screen and (min-width: 992px) {
-  .topic-container {
-    h1 {
-      font-size: 3.8rem;
-    }
-    span {
-      font-size: 2rem;
-    }
-  }
-  .lotto-container {
-    .lottoDiv {
-      border: 4.5px solid $mainLight;
-      width: 4.5rem;
-      height: 4.5rem;
-      margin: 0.8rem;
-      font-size: 1.8rem;
-      &:hover {
-        border: 4.5px solid $hoverLottoDiv;
-      }
-    }
-  }
-  button {
-    margin: 1rem;
-    height: 2.9rem;
-  }
-  button:nth-child(1) {
-    width: 7rem;
-    border: $mainLight 3px solid;
-    &:hover {
-      border: 3px $hoverLottoDiv solid;
-    }
-  }
-  button:nth-child(2) {
-    width: 12rem;
-    border: $mainDark 3px solid;
-    &:hover {
-      border: $hoverLottoDiv 3px solid;
-    }
-  }
-  .lotto-learn-more-container {
-    .lotto-info {
-      width: 15rem;
-    }
-  }
-}
+// // #3
+// @media only screen and (min-width: 992px) {
+//   .topic-container {
+//     h1 {
+//       font-size: 3.8rem;
+//     }
+//     span {
+//       font-size: 2rem;
+//     }
+//   }
+//   .lotto-container {
+//     .lottoDiv {
+//       border: 4.5px solid $mainLight;
+//       width: 4.5rem;
+//       height: 4.5rem;
+//       margin: 0.8rem;
+//       font-size: 1.8rem;
+//       &:hover {
+//         border: 4.5px solid $hoverLottoDiv;
+//       }
+//     }
+//   }
+//   button {
+//     margin: 1rem;
+//     height: 2.9rem;
+//   }
+//   button:nth-child(1) {
+//     width: 7rem;
+//     border: $mainLight 3px solid;
+//     &:hover {
+//       border: 3px $hoverLottoDiv solid;
+//     }
+//   }
+//   button:nth-child(2) {
+//     width: 12rem;
+//     border: $mainDark 3px solid;
+//     &:hover {
+//       border: $hoverLottoDiv 3px solid;
+//     }
+//   }
+//   .lotto-learn-more-container {
+//     .lotto-info {
+//       width: 15rem;
+//     }
+//   }
+// }
 
-// #4
-@media only screen and (min-width: 1200px) {
-  .topic-container {
-    h1 {
-      font-size: 4rem;
-    }
-    span {
-      font-size: 2rem;
-    }
-  }
-  .lotto-container {
-    .lottoDiv {
-      border: 5px solid $mainLight;
-      width: 5rem;
-      height: 5rem;
-      margin: 0.7rem;
-      font-size: 1.8rem;
-      &:hover {
-        border: 5px solid $hoverLottoDiv;
-      }
-    }
-  }
-  button {
-    height: 3rem;
-  }
-  button:nth-child(1) {
-    &:hover {
-      border: 3px $hoverLottoDiv solid;
-    }
-  }
-  button:nth-child(2) {
-    width: 13rem;
-  }
-  .lotto-learn-more-container {
-    .learn-more-circle {
-      width: auto;
-      height: auto;
-      // border: 2px $learnMoreLight solid;
-      font-size: 0.8rem;
-    }
-    .lotto-info {
-      width: 15rem;
-      font-size: 0.8rem;
-    }
-  }
-}
+// // #4
+// @media only screen and (min-width: 1200px) {
+//   .topic-container {
+//     h1 {
+//       font-size: 4rem;
+//     }
+//     span {
+//       font-size: 2rem;
+//     }
+//   }
+//   .lotto-container {
+//     .lottoDiv {
+//       border: 5px solid $mainLight;
+//       width: 5rem;
+//       height: 5rem;
+//       margin: 0.7rem;
+//       font-size: 1.8rem;
+//       &:hover {
+//         border: 5px solid $hoverLottoDiv;
+//       }
+//     }
+//   }
+//   .button-container > button {
+//     height: 3rem;
+//   }
+//   .reset-btn  {
+//     &:hover {
+//       border: 3px $hoverLottoDiv solid;
+//     }
+//   }
+//   .button-container > {
+//     width: 13rem;
+//   }
+//   .lotto-learn-more-container {
+//     .learn-more-circle {
+//       width: auto;
+//       height: auto;
+//       // border: 2px $learnMoreLight solid;
+//       font-size: 0.8rem;
+//     }
+//     .lotto-info {
+//       width: 15rem;
+//       font-size: 0.8rem;
+//     }
+//   }
+// }
