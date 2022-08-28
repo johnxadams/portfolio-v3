@@ -8,6 +8,7 @@ import { Link as LinkRouter } from "react-router-dom";
 //styled-components
 import { ContactMeNav } from "../../StyledComponents/Button";
 
+
 export default function NavBar() {
   const [stateOpacity, setStateOpacity] = useState(false);
   const [stateHome, setStateHome] = useState(false);

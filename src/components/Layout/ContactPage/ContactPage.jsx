@@ -12,6 +12,7 @@ import { IoLogoGithub } from "react-icons/io";
 
 // styled-component
 import { HomeBtn } from "../../StyledComponents/Button";
+import { SubmitBtn } from "../../StyledComponents/Button";
 
 //images
 // import stayPresent from "../../../assets/contact-me-img/stayPresent.jpg"
@@ -92,7 +93,7 @@ export default function Contactpage() {
                 />
               </div>
               <div className="contact-me-submit-space">
-                <input type="submit" value="Send" />
+                <SubmitBtn type="submit">Send</SubmitBtn>
               </div>
             </form>
           </div>

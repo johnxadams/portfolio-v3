@@ -3,7 +3,11 @@ import React, { useState } from "react";
 
 //components
 import LottoApplication from "./LottoApplication/LottoApplication";
+
 // import LottoLearnMore from "./LottoLearnMore/LottoLearnMore";
+
+// styled-components
+import { LottoBtn } from "../../StyledComponents/Button";
 
 
 export default function LottoPage() {
@@ -39,8 +43,8 @@ export default function LottoPage() {
         emptyBoxes={arrOfEmptyStrings}
       />
       <div className="button-container">
-        <button className="reset-btn" onClick={handleReset}>Reset</button>
-        <button className="try-luck-btn" onClick={handleLotto}>Try your Luck</button>
+        <LottoBtn onClick={handleReset}>Reset</LottoBtn>
+        <LottoBtn retryBtn onClick={handleLotto}>Try your Luck</LottoBtn>
       </div>
       {/* <LottoLearnMore/> */}
       </div>

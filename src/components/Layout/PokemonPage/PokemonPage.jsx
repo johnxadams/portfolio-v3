@@ -1,7 +1,8 @@
 // react hook
 import React, { useState } from "react";
 
-
+// styled-components
+// import { PokeSearchInput } from "../../StyledComponents/Input";
 
 /**
  * fetch data from API using async

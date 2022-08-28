@@ -116,21 +116,21 @@
         // background: darkturquoise;
         margin-top: 0.5rem;
         @include flex-justify-align-dir(flex-end, center, row);
-        input {
-          height: 3rem;
-          width: 12rem;
-          border-radius: 5px;
-          outline: inherit;
-          background: none;
-          border: 2px solid $mainLight;
-          color: $mainLight;
-          letter-spacing: 2px;
-          cursor: pointer;
-          &:active {
-            background: gray;
-            transition: 0.3s ease-in-out;
-          }
-        }
+        // input {
+        //   height: 3rem;
+        //   width: 12rem;
+        //   border-radius: 5px;
+        //   outline: inherit;
+        //   background: none;
+        //   border: 2px solid $mainLight;
+        //   color: $mainLight;
+        //   letter-spacing: 2px;
+        //   cursor: pointer;
+        //   &:active {
+        //     background: gray;
+        //     transition: 0.3s ease-in-out;
+        //   }
+        // }
       }
     }
   }
