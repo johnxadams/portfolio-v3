@@ -1,9 +1,11 @@
 // react hook
 import React, { useState } from "react";
 
-// styled-components
-// import { PokeSearchInput } from "../../StyledComponents/Input";
+import {BsSearch}  from "react-icons/bs";
 
+// styled-components
+import { PokeSearchInput } from "../../StyledComponents/Input";
+import { PokeSearchBtn } from "../../StyledComponents/Button";
 /**
  * fetch data from API using async
  * fetching the API needs to be outside of the react-function-component,
@@ -91,16 +93,15 @@ export default function PokemonPage() {
     <>
       <div className="pokemon-container">
         <form id="form-tag">
-          <input
+          <PokeSearchInput
             onChange={handlePokemonName}
-            type="text"
             id="pokemon-input"
             placeholder="search pokemon"
             value={pokemonName}
           />
-          <button onClick={handlePokemonSearchBtn} id="search-btn">
-            Search
-          </button>
+          <PokeSearchBtn onClick={handlePokemonSearchBtn} id="search-btn">
+             <BsSearch className="searchIcon"/>
+          </PokeSearchBtn>
         </form>
         <div id="pokedex-container">
           {/*

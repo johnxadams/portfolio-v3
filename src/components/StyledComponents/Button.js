@@ -79,10 +79,13 @@ export const LottoBtn = styled(DefaultButton)`
   }}
 `;
 
-// export const LottoRetryBtn = styled(DefaultButton)`
-//   margin: 2rem 1rem;
-//   background: var(--mainLight);
-//   border: 2px solid var(--mainDark);
-//   color: var(--mainDark);
-//   font-weight: bold;
-// `;
+export const PokeSearchBtn = styled(DefaultButton)`
+/* background: radial-gradient(#262c38, #716e77); */
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+border: none;
+.searchIcon {
+  font-size: 1.5rem;
+}
+`

@@ -13,7 +13,13 @@ export const DefaultInput = styled.input.attrs((props) => {
   margin-top: 1rem;
 `;
 
-
-export const PokeSearchInput = styled.input(DefaultInput)`
-
+export const PokeSearchInput = styled(DefaultInput)`
+margin: 0.5rem;
+width: auto;
+&:focus {
+    outline: none;
+}
+&::placeholder {
+    text-transform: capitalize;
+}
 `

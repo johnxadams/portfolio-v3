@@ -1,55 +1,56 @@
 .pokemon-container {
   height: 50rem;
+  // background: lightblue;
     @include flex-justify-align-dir(center, center, column);
   form {
     // border: 2px solid red;
     display: flex;
     align-items: center;
     min-height: 2rem;
-    input {
-      outline: none;
-      border-top-style: hidden;
-      border-right-style: hidden;
-      border-left-style: hidden;
-      font-size: 1.1rem;
-      width: 10rem;
-      padding-left: 0.5rem;
-      margin-left: 1.35rem;
-      margin-top: 0.1rem;
-      border-radius: 5px;
-      &:focus {
-        border: 3px #979795 solid;
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        outline: none;
-      }
-      &::placeholder {
-        color: #858585;
-        font-size: 0.9rem;
-      }
-    }
-    #search-btn {
-      background: radial-gradient(#a7a7a7, #978d6c);
-      width: 4rem;
-      height: 1.4rem;
-      cursor: pointer;
-      border-radius: 5px;
-      border: none;
-      box-shadow: 0.5px 0.5px 2px black;
-      display: flex;
-      align-items: center;
-      padding-top: 0.3rem;
-      font-size: 1rem;
-      &:hover {
-        color: #070707;
-      }
-      &:active {
-        color: black;
-        background: radial-gradient(#8f8c8b, #8a8988);
-        transition: all 1.2s ease-in-out;
-      }
-    }
+    // input {
+    //   outline: none;
+    //   border-top-style: hidden;
+    //   border-right-style: hidden;
+    //   border-left-style: hidden;
+    //   font-size: 1.1rem;
+    //   width: 10rem;
+    //   padding-left: 0.5rem;
+    //   margin-left: 1.35rem;
+    //   margin-top: 0.1rem;
+    //   border-radius: 5px;
+    //   &:focus {
+    //     border: 3px #979795 solid;
+    //     border-top-style: hidden;
+    //     border-right-style: hidden;
+    //     border-left-style: hidden;
+    //     outline: none;
+    //   }
+    //   &::placeholder {
+    //     color: #858585;
+    //     font-size: 0.9rem;
+    //   }
+    // }
+    // #search-btn {
+    //   background: radial-gradient(#a7a7a7, #978d6c);
+    //   width: 4rem;
+    //   height: 1.4rem;
+    //   cursor: pointer;
+    //   border-radius: 5px;
+    //   border: none;
+    //   box-shadow: 0.5px 0.5px 2px black;
+    //   display: flex;
+    //   align-items: center;
+    //   padding-top: 0.3rem;
+    //   font-size: 1rem;
+    //   &:hover {
+    //     color: #070707;
+    //   }
+    //   &:active {
+    //     color: black;
+    //     background: radial-gradient(#8f8c8b, #8a8988);
+    //     transition: all 1.2s ease-in-out;
+    //   }
+    // }
   }
 
   #pokedex-container {
