@@ -25,12 +25,12 @@ const isHomePage = pathname === "/";
       <section>
         <NavBar />
       </section>
-      <section id={"/"} className="landing-page">
+      {/* <section id={"/"} className="landing-page">
         <Landingpage />
       </section>
       <section id={"about"} className="about-me">
         <AboutMe />
-      </section>
+      </section> */}
       <section id={"projects"} className="gif-page">
         <GifPage />
       </section>
