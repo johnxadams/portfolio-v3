@@ -1,7 +1,7 @@
 // react hook
 import React, { useState } from "react";
 
-import {BsSearch}  from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 
 // styled-components
 import { PokeSearchInput } from "../../StyledComponents/Input";
@@ -38,13 +38,13 @@ export default function PokemonPage() {
   });
   const [pokemonName, setPokemonName] = useState("");
 
-  // eventHandlers 
+  // eventHandlers
   const handlePokemonName = (e) => {
     e.preventDefault();
     // console.log(pokemonName);
     setPokemonName(e.target.value.toLowerCase());
   };
-  const handlePokemonSearchBtn = (e) => {
+  const handlePokemonSearch = (e) => {
     e.preventDefault();
     if (!pokemonName) return;
     getPokemonData(pokemonName).then((pokeData) => {
@@ -92,15 +92,16 @@ export default function PokemonPage() {
   return (
     <>
       <div className="pokemon-container">
-        <form id="form-tag">
+        <form id="form-tag" onSubmit={handlePokemonSearch}>
           <PokeSearchInput
             onChange={handlePokemonName}
             id="pokemon-input"
+            type="text"
             placeholder="search pokemon"
             value={pokemonName}
           />
-          <PokeSearchBtn onClick={handlePokemonSearchBtn} id="search-btn">
-             <BsSearch className="searchIcon"/>
+          <PokeSearchBtn type="submit" id="search-btn">
+            <BsSearch className="searchIcon" />
           </PokeSearchBtn>
         </form>
         <div id="pokedex-container">
@@ -154,7 +155,6 @@ export default function PokemonPage() {
           </div>
         </div>
         {/* <PokestatsContainer/> */}
-        
       </div>
     </>
   );

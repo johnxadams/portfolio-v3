@@ -8,31 +8,15 @@ import emailjs from "@emailjs/browser";
 // reactIcons
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
-// import {IoChevronBackOutline}
 
 // styled-component
 import { HomeBtn } from "../../StyledComponents/Button";
 import { SubmitBtn } from "../../StyledComponents/Button";
 
-//images
-// import stayPresent from "../../../assets/contact-me-img/stayPresent.jpg"
-
-
-//email-IDs
-// const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-// const templateID = process.env.REACT_APP_EMAILJS_TEMPPLATE_ID;
-// const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
+//email IDs
 const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const templateID = process.env.REACT_APP_EMAILJS_TEMPPLATE_ID;
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
-
-console.log("process.env: ",process.env)
-
-
-console.log(`serverID: ${serviceID} \n templateID: ${templateID} \n publicKey: ${publicKey} `)
-
 
 export default function Contactpage() {
   const form = useRef();
