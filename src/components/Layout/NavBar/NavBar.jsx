@@ -32,14 +32,14 @@ export default function NavBar() {
     // } else { setStateHome(false)}
     scrollValue < 600 ? setStateHome(true) : setStateHome(false);
 
-    scrollValue > 600 && scrollValue < 1300
+    scrollValue > 600 && scrollValue < 1000
       ? setStateAboutMe(true)
       : setStateAboutMe(false);
-    scrollValue > 1300 && scrollValue < 4300
+    scrollValue > 1000 && scrollValue < 3500
       ? setStateProjects(true)
       : setStateProjects(false);
 
-    scrollValue > 4300 ? setStateTools(true) : setStateTools(false);
+    scrollValue > 3500 ? setStateTools(true) : setStateTools(false);
   };
   window.addEventListener("scroll", changeNavBarOpacityOnScroll);
   window.addEventListener("scroll", changeNavigationOnScroll);
@@ -54,7 +54,7 @@ export default function NavBar() {
               spy={true}
               smooth={true}
               offset={-50}
-              duration={500}
+              duration={100}
               className={stateHome ? "nav-link" : null}
             >
               Home
@@ -65,8 +65,8 @@ export default function NavBar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-85}
-              duration={500}
+              offset={-80}
+              duration={100}
               className={stateAboutMe ? "nav-link" : null}
             >
               About Me
@@ -78,7 +78,7 @@ export default function NavBar() {
               spy={true}
               smooth={true}
               offset={-85}
-              duration={500}
+              duration={100}
               className={stateProjects ? "nav-link" : null}
             >
               My Project
@@ -89,8 +89,8 @@ export default function NavBar() {
               to="tools"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-60}
+              duration={100}
               className={stateTools ? "nav-link" : null}
             >
               Tools

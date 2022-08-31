@@ -1,11 +1,17 @@
-import weatherProjectImg from "../src/assets/project-img-gif/weatherProjectImg.jpg"
-import weatherProjectGif from "../src/assets/project-img-gif/weatherProjectGif.gif"
+import weatherProjectImg from "../src/assets/project-img-gif/weatherProjectImg.jpg";
+import weatherProjectGif from "../src/assets/project-img-gif/weatherProjectGif.gif";
+import lottoPageGif from '../src/assets/project-img-gif/lottoPageGif.gif';
+import lottoPageImg from '../src/assets/project-img-gif/lottoPageImg.jpg';
+import pokemonProjectGif from '../src/assets/project-img-gif/pokemonProjectGif.gif';
+import pokemonProjectImg from '../src/assets/project-img-gif/pokemonProjectImg.jpg';
+
 export const worksArr = [
   {
     name: "Lotto",
-    img: "https://placebear.com/640/360",
-    gif: "this gif",
+    img: lottoPageImg,
+    gif: lottoPageGif,
     alt: "Pokemon API",
+    projectClassName: "lotto-gif-img gif-img-container",
     gitHubLink: "",
   },
   {
@@ -20,15 +26,15 @@ export const worksArr = [
     img: weatherProjectImg,
     gif: weatherProjectGif,
     alt: "WeatherApp",
-    projectClassName: "weather-img-container",
+    projectClassName: "weather-gif-img gif-img-container",
     gitHubLink: "https://github.com/johnxadams/portfolio-v3/blob/main/src/components/Layout/WeatherPage/WeatherPage.jsx",
   },
   {
     name: "Pokemon",
-    img: "https://placebear.com/640/360",
-    gif: "this gif",
+    img: pokemonProjectImg,
+    gif: pokemonProjectGif,
     alt: "Pokemon API",
-    projectClassName: "weather-img",
+    projectClassName: "pokemon-gif-img gif-img-container",
     gitHubLink: "",
   },
   {

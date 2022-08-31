@@ -9,15 +9,13 @@ import axios from "axios";
 // import 'dotenv/config';
 //npm installed fs
 
-
 // styles
 // import "../../../scss/layout";
 
 //icons
 import { WiThermometer, WiHumidity, WiStrongWind } from "react-icons/wi";
 
-
-const apiKey = process.env.REACT_APP_WEATHER_API_KEY
+const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
 // console.log("process: ", process.env);
 export default function WeatherPage() {
@@ -25,10 +23,8 @@ export default function WeatherPage() {
   const [location, setLocation] = useState("");
   // initial value of className will be a self made dark background className
   const [bgWeather, setBgWeather] = useState("clouds");
- 
+
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
-
-
 
   const searchLocation = (e) => {
     if (e.key === "Enter") {
@@ -52,13 +48,23 @@ export default function WeatherPage() {
     monthData[current.getUTCMonth() + 1]
   }`;
   //get time
-  const time = current.toUTCString();
-  const timeHours = parseInt(time.slice(-12, -10));
+  const getTime = () => {
+    const time = current.toUTCString();
+    const timeHours = parseInt(time.slice(-12, -10));
+
+    let timezoneOffsetHours = Math.floor(data.timezone / 3600);
+
+    const foreignTimezoneHour = timeHours + timezoneOffsetHours;
+    console.log(foreignTimezoneHour);
+    const timezone24h =
+      foreignTimezoneHour > 24 ? foreignTimezoneHour % 24 : foreignTimezoneHour;
+    const worldClock = timezone24h.toString() + time.slice(-10, -7);
+    return worldClock;
+  };
+  // getTime();
   // I do Math.floor insdie timezoneOffsetHours because some timeZones devided by 3600, comes with a dezima.
   // e.g. Adelaide timezone 34200 / 360 = 9,5
-  const timezoneOffsetHours = Math.floor(data.timezone / 3600);
-  const foreignTimezoneHour = timeHours + timezoneOffsetHours;
-  const worldClock = foreignTimezoneHour.toString() + time.slice(-10, -7);
+
   // console.log("time: ", time);
   // console.log("timeHours as a number:  ", timeHours);
   // console.log("timezoneOffsetHours: ", timezoneOffsetHours);
@@ -103,7 +109,7 @@ export default function WeatherPage() {
         {data.name && (
           <>
             <div className="main">
-              <p>{worldClock}</p>
+              <p>{getTime()}</p>
               <p> Today, {date}</p>
             </div>
             <div className="bottom">

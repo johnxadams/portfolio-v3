@@ -13,41 +13,41 @@
     background-color: goldenrod;
     border: 2px black solid;
     margin: 2rem;
-    .weather-img-container{
+    .gif-img-container {
       position: relative;
       border: 2px black solid;
       width: 75%;
       height: 75%;
       border-radius: 50%;
       margin: 10px auto;
-      background-image: url("../../assets/project-img-gif/weatherProjectImg.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 300%;
-      // overflow: hidden;
       background-position-y: 0%;
       @include flex-justify-align-dir(center, center, row);
-      // background-position-x: 1rem;
-      //background scale1.1 while  div stays the same 
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       cursor: pointer;
-      // .img-of-work {
-      //   // display: block;
-      //   position: absolute;
-      //   width: 100%;
-      //   height: 100%;
-      //   object-fit: cover;
-      //   border-radius: 50%;
-      //   transition: 0.3s ease-in-out;
-      // }
       &:hover {
-        // transform: scale(1.1);
-        // transform-origin: 50% 50%;
         transition: 0.3s ease-in-out;
         background-image: url("../../assets/project-img-gif/weatherProjectGif.gif");
         background-size: 350%;
+      }
+    }
+    .weather-gif-img {
+      background-image: url("../../assets/project-img-gif/weatherProjectImg.jpg");
+      &:hover {
+        background-image: url("../../assets/project-img-gif/weatherProjectGif.gif");
+      }
+    }
+    .lotto-gif-img {
+      background-image: url("../../assets/project-img-gif/lottoPageImg.jpg");
+      &:hover {
+        background-image: url("../../assets/project-img-gif/lottoPageGif.gif");
+      }
+    }
+    .pokemon-gif-img {
+      background-image: url("../../assets/project-img-gif/pokemonProjectImg.jpg");
+      &:hover {
+        background-image: url("../../assets/project-img-gif/pokemonProjectGif.gif");
       }
     }
     .project-card-description {
@@ -58,10 +58,9 @@
       p {
         margin: 0.7rem auto;
       }
-      .github-link{
+      .github-link {
         cursor: pointer;
         text-decoration: underline;
-        
       }
     }
   }
