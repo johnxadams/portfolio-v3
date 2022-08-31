@@ -3,19 +3,20 @@
   min-height: auto;
   padding-top: 5rem;
   width: 50rem;
-  background-color: aquamarine;
+  // background-color: aquamarine;
   @include flex-justify-align-dir(center, flex-start, row);
   flex-wrap: wrap;
 
   .project-card {
     width: 10rem;
     height: 10rem;
-    background-color: goldenrod;
-    border: 2px black solid;
+    // background-color: goldenrod;
+    // border: 2px black solid;
     margin: 2rem;
     .gif-img-container {
       position: relative;
-      border: 2px black solid;
+      border: 1.25px #716e77 solid;
+      box-shadow: 0px 30px 45px rgba(0, 0, 0, 0.144);
       width: 75%;
       height: 75%;
       border-radius: 50%;
@@ -23,37 +24,37 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 300%;
-      background-position-y: 0%;
-      @include flex-justify-align-dir(center, center, row);
       cursor: pointer;
+      background-position-y: 0%;
+      transition: 0.75s ease-in-out;
+      @include flex-justify-align-dir(center, center, row);
       &:hover {
-        transition: 0.3s ease-in-out;
-        background-image: url("../../assets/project-img-gif/weatherProjectGif.gif");
         background-size: 350%;
       }
     }
     .weather-gif-img {
-      background-image: url("../../assets/project-img-gif/weatherProjectImg.jpg");
+      background-image: url('../../assets/project-img-gif/weatherProjectImg.jpg');
       &:hover {
-        background-image: url("../../assets/project-img-gif/weatherProjectGif.gif");
+        background-image: url('../../assets/project-img-gif/weatherProjectGif.gif');
       }
     }
     .lotto-gif-img {
-      background-image: url("../../assets/project-img-gif/lottoPageImg.jpg");
+      background-image: url('../../assets/project-img-gif/lottoPageImg.jpg');
       &:hover {
-        background-image: url("../../assets/project-img-gif/lottoPageGif.gif");
+        background-image: url('../../assets/project-img-gif/lottoPageGif.gif');
       }
     }
     .pokemon-gif-img {
-      background-image: url("../../assets/project-img-gif/pokemonProjectImg.jpg");
+      background-image: url('../../assets/project-img-gif/pokemonProjectImg.jpg');
       &:hover {
-        background-image: url("../../assets/project-img-gif/pokemonProjectGif.gif");
+        background-image: url('../../assets/project-img-gif/pokemonProjectGif.gif');
       }
     }
     .project-card-description {
       width: 100%;
       height: auto;
-      background: #fff;
+      // background: #fff;
+      color: #716e77;
       @include flex-justify-align-dir(center, center, column);
       p {
         margin: 0.7rem auto;

@@ -10,19 +10,11 @@
 @import "./footer.scss";
 
 .landing-page {
-  // background-color: $mainDark;
-
-  // background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
-  //background-color: $mainDark; //#282828;
   background: linear-gradient(45deg, $mainDark,#323e4b, #2c2a2a, $secondaryDark);
-  // background-size: 16px 16px;
   animation: gradient 15s ease infinite;
   background-size: 500% 500%;
   min-height: 75vh;
-  // display: flex;
-  // justify-content: space-evenly;
   @include flex-justify-align-dir(flex-start, center, row);
-
 }
 @keyframes gradient {
   0% {
@@ -36,12 +28,11 @@
   }
 }
 .about-me {
-  background-color:  $mainDark; //#282828;
+  background-color:  $mainDark;
   min-height: auto;
-  // @include flex-justify-align-dir(flex-start, center, row);
 }
 .gif-page {
-  background-color: $mainLight;
+  background-color: $secondaryDark;
   min-height: object-fit;
   // height: 50vh ;
   @include flex-justify-align-dir(center, center, column);

@@ -1,16 +1,14 @@
 // react hook
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { BsSearch } from "react-icons/bs";
+import { BsSearch } from 'react-icons/bs';
 
 // styled-components
-import { PokeSearchInput } from "../../StyledComponents/Input";
-import { PokeSearchBtn } from "../../StyledComponents/Button";
-/**
- * fetch data from API using async
- * fetching the API needs to be outside of the react-function-component,
- * otherwise the api-fetching will initialize everytime the page renders
- */
+import { PokeSearchInput } from '../../StyledComponents/Input';
+import { PokeSearchBtn } from '../../StyledComponents/Button';
+
+//comments.txt #1
+
 const getPokemonData = async (pokemonName) => {
   const response = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
@@ -21,41 +19,42 @@ const getPokemonData = async (pokemonName) => {
 
 // rfc
 export default function PokemonPage() {
+
   // useStates 2x
   const [pokemonData, setPokemonData] = useState({
-    name: "",
-    species: "",
-    img: "",
-    hp: "",
-    attack: "",
-    defense: "",
-    specialAttack: "",
-    specialDefense: "",
-    abilities: "",
-    speed: "",
-    dataName: "",
-    classes: "",
+    name: '',
+    species: '',
+    img: '',
+    hp: '',
+    attack: '',
+    defense: '',
+    specialAttack: '',
+    specialDefense: '',
+    abilities: '',
+    speed: '',
+    dataName: '',
+    classes: '',
   });
-  const [pokemonName, setPokemonName] = useState("");
+  const [pokemonName, setPokemonName] = useState('');
 
-  // eventHandlers
-  const handlePokemonName = (e) => {
-    e.preventDefault();
-    // console.log(pokemonName);
+  // eventHandlers 2x
+  const handlePokemonNameInput = (e) => {
     setPokemonName(e.target.value.toLowerCase());
   };
+
   const handlePokemonSearch = (e) => {
     e.preventDefault();
+
     if (!pokemonName) return;
+
     getPokemonData(pokemonName).then((pokeData) => {
-      // console.log("pokeData: ", pokeData);
+      console.log("pokemonData from API: ", pokeData);
 
       setPokemonData({
         name: pokemonName,
         species: pokeData.species.name,
         img: pokeData.sprites.front_default,
-        // hp: {hpNr: pokeData.stats[0].base_stat, hpName: pokeData.stats[0].stat.name},
-        // for some reason this doesnt work as an object!!!
+        // comments.txt #2
         hp: [pokeData.stats[0].stat.name, pokeData.stats[0].base_stat],
         attack: {
           attackName: pokeData.stats[1].stat.name,
@@ -75,26 +74,22 @@ export default function PokemonPage() {
           pokeData.abilities[0].ability.name,
           pokeData.abilities[1].ability.name,
         ],
-        dataName: { stats: "stats", abilities: "abilities" },
+        dataName: { stats: 'stats', abilities: 'abilities' },
         classes: {
-          imgContainer: "img-container",
-          pokeNameContainer: "pokemon-name-container",
+          pokeNameContainer: 'pokemon-name-container',
+          imgContainer: 'img-container',
         },
       });
-      setPokemonName("");
+      setPokemonName('');
     });
-    // setPokeStats(pokemonStatsNaming)
   };
-  // trrying to grab the object keys and use is as a string for naming the stats
-  // let [first, second] = Object.keys(setPokemonData);
-  // console.log("pokeData", pokemonData);
-  // console.log("pokeStats ", pokeStats);
+
   return (
     <>
       <div className="pokemon-container">
         <form id="form-tag" onSubmit={handlePokemonSearch}>
           <PokeSearchInput
-            onChange={handlePokemonName}
+            onChange={handlePokemonNameInput}
             id="pokemon-input"
             type="text"
             placeholder="search pokemon"
@@ -106,8 +101,7 @@ export default function PokemonPage() {
         </form>
         <div id="pokedex-container">
           {/*
-           * I needed to grab the classes from the useState.setPokemonData,
-           * so the styling appears  only if I click on the button
+           * comments.txt #3
            * */}
           <div className={pokemonData.classes.pokeNameContainer}>
             {pokemonData.name.toUpperCase()}
@@ -123,8 +117,8 @@ export default function PokemonPage() {
               <span>{pokemonData.hp[1]}</span>
             </div>
             <div className="list-of-stats">
-              {/* attack - i'm going with an object on this one*/}
-              <span>{pokemonData.attack.attackName}</span>{" "}
+              {/* attack */}
+              <span>{pokemonData.attack.attackName}</span>{' '}
               <span>{pokemonData.attack.attackStat}</span>
             </div>
             {/* defense */}
@@ -154,7 +148,6 @@ export default function PokemonPage() {
             <span>{pokemonData.abilities[1]}</span>
           </div>
         </div>
-        {/* <PokestatsContainer/> */}
       </div>
     </>
   );

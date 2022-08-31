@@ -1,40 +1,35 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 // data & apiKey
 // import { apiKey } from "../../../api-key";
-import { monthData } from "../../../data";
+import { monthData } from '../../../data';
 
 //librabries
-import axios from "axios";
+import axios from 'axios';
 // import 'dotenv/config';
-//npm installed fs
-
-// styles
-// import "../../../scss/layout";
 
 //icons
-import { WiThermometer, WiHumidity, WiStrongWind } from "react-icons/wi";
+import { WiThermometer, WiHumidity, WiStrongWind } from 'react-icons/wi';
 
 const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
-// console.log("process: ", process.env);
 export default function WeatherPage() {
   const [data, setData] = useState({});
-  const [location, setLocation] = useState("");
-  // initial value of className will be a self made dark background className
-  const [bgWeather, setBgWeather] = useState("clouds");
+  const [location, setLocation] = useState('');
+  // initial value of Weather backgroundIma will be set in className='clouds'
+  const [bgWeather, setBgWeather] = useState('clouds');
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
   const searchLocation = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       axios.get(url).then((response) => {
         setData(response.data);
-        console.log(" fetched data: ", response.data);
+        console.log(' fetched data: ', response.data);
         setBgWeather(response.data.weather?.[0].main.toLowerCase());
       });
 
-      setLocation("");
+      setLocation('');
     }
   };
 
@@ -61,20 +56,7 @@ export default function WeatherPage() {
     const worldClock = timezone24h.toString() + time.slice(-10, -7);
     return worldClock;
   };
-  // getTime();
-  // I do Math.floor insdie timezoneOffsetHours because some timeZones devided by 3600, comes with a dezima.
-  // e.g. Adelaide timezone 34200 / 360 = 9,5
 
-  // console.log("time: ", time);
-  // console.log("timeHours as a number:  ", timeHours);
-  // console.log("timezoneOffsetHours: ", timezoneOffsetHours);
-  // console.log("foreignTimezoneHour: ", foreignTimezoneHour);
-  // console.log("worldClock: ", worldClock);
-
-  // const bgWeather = data.weather?.[0].main.toLowerCase();
-
-  // console.log(bgWeather);
-  // console.log(data.weather?.[0].main.toLowerCase());
   return (
     <div className={`weather-app ${bgWeather}`}>
       <div className="search">

@@ -4,39 +4,32 @@
     width: 50%;
     height: auto;
     background: $mainDark;
+    padding-bottom: 5rem;
     @include flex-justify-align-dir(center, center, column);
-
-    h3 {
-      font-size: 1.5rem;
+    h2 {
+      font-size: 2.25rem;
       width: 29rem;
       color: cadetblue;
-      // font-weight: 900;
     }
     p:nth-child(2) {
       font-weight: bold;
-      font-size: 1.8rem;
+      font-size: 1.75rem;
       width: 29rem;
       margin-top: -1.5rem;
       color: $mainLight;
     }
     p:nth-child(3) {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       width: 29rem;
       color: $mainLight;
     }
   }
   .right-img-container {
     width: 50%;
-    min-height: auto;
-    // background: #585;
-    // background-image: url(.././../assets/about-me-img/aboutme-prototype.jpg);
-    background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      @include flex-justify-align-dir(center, center, row);
-img {
-  object-fit: contain;
-    width: 100%;
-}
+    @include flex-justify-align-dir(center, center, row);
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
   }
 }

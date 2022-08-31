@@ -1,11 +1,11 @@
-import React from "react";
-import aboutmePrototype from "../../../assets/about-me-img/aboutmePrototype.jpg"
+//image
+import aboutmePrototype from '../../../assets/about-me-img/aboutmePrototype.jpg';
 
 export default function AboutMe() {
   return (
     <div className="body-about-me">
       <section className="left-about-me">
-        <h3>ABOUT ME</h3>
+        <h2>ABOUT ME</h2>
         <p>
           I'm an impassioned developer who loves to craft solid and scalable
           visuals on the internet.

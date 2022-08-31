@@ -37,12 +37,11 @@ const isHomePage = pathname === "/";
       <section id={worksArr[5].name} className="weather-page">
         <WeatherPage />
       </section>
-
-      <section id={worksArr[1].name} className="pokemon-page">
-        <PokemonPage />
-      </section>
       <section id={worksArr[0].name} className="lotto-page">
         <LottoPage />
+      </section>
+      <section id={worksArr[1].name} className="pokemon-page">
+        <PokemonPage />
       </section>
       <section id={"tools"} className="tools-page" >
         <Tools />

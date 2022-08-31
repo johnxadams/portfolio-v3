@@ -1,114 +1,108 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+//hooks
+import { useState } from 'react';
 
 //librabries
-import { Link as LinkScroll } from "react-scroll";
-import { Link as LinkRouter } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 
 //styled-components
-import { ContactMeNav } from "../../StyledComponents/Button";
-
+import { ContactMeNav } from '../../StyledComponents/Button';
 
 export default function NavBar() {
-  const [stateOpacity, setStateOpacity] = useState(false);
-  const [stateHome, setStateHome] = useState(false);
-  const [stateAboutMe, setStateAboutMe] = useState(false);
-  const [stateProjects, setStateProjects] = useState(false);
-  const [stateTools, setStateTools] = useState(false);
+  //useStates 5x
+  const [opacityState, setOpacityState] = useState(false);
+  const [homeState, setHomeState] = useState(false);
+  const [AboutMeState, setAboutMeState] = useState(false);
+  const [projectsState, setProjectsState] = useState(false);
+  const [toolsState, setToolsState] = useState(false);
 
+  // eventListener 2x
   const changeNavBarOpacityOnScroll = () => {
     const scrollValue = document.documentElement.scrollTop;
+
     if (scrollValue > 600) {
-      setStateOpacity(true);
+      setOpacityState(true);
     } else {
-      setStateOpacity(false);
+      setOpacityState(false);
     }
   };
 
-  const changeNavigationOnScroll = () => {
+  const moveToNextNavigationOnScroll = () => {
     const scrollValue = document.documentElement.scrollTop;
-    // if(scrollValue < 600) {
-    //   setStateHome(true)
-    // } else { setStateHome(false)}
-    scrollValue < 600 ? setStateHome(true) : setStateHome(false);
+
+    scrollValue < 600 ? setHomeState(true) : setHomeState(false);
 
     scrollValue > 600 && scrollValue < 1000
-      ? setStateAboutMe(true)
-      : setStateAboutMe(false);
+      ? setAboutMeState(true)
+      : setAboutMeState(false);
     scrollValue > 1000 && scrollValue < 3500
-      ? setStateProjects(true)
-      : setStateProjects(false);
+      ? setProjectsState(true)
+      : setProjectsState(false);
 
-    scrollValue > 3500 ? setStateTools(true) : setStateTools(false);
+    scrollValue > 3500 ? setToolsState(true) : setToolsState(false);
   };
-  window.addEventListener("scroll", changeNavBarOpacityOnScroll);
-  window.addEventListener("scroll", changeNavigationOnScroll);
+
+  window.addEventListener('scroll', changeNavBarOpacityOnScroll);
+  window.addEventListener('scroll', moveToNextNavigationOnScroll);
 
   return (
     <>
-      <nav className={stateOpacity ? "navPacity" : null}>
+      <nav className={opacityState ? 'navbar-opacity' : null}>
         <ul>
-          <li className={stateHome ? "nav-item" : null}>
-            <LinkScroll
+          <li className={homeState ? 'nav-item' : null}>
+            <ScrollLink
               to="/"
               spy={true}
               smooth={true}
               offset={-50}
               duration={100}
-              className={stateHome ? "nav-link" : null}
+              className={homeState ? 'nav-link' : null}
             >
               Home
-            </LinkScroll>
+            </ScrollLink>
           </li>
-          <li className={stateAboutMe ? "nav-item" : null}>
-            <LinkScroll
+          <li className={AboutMeState ? 'nav-item' : null}>
+            <ScrollLink
               to="about"
               spy={true}
               smooth={true}
               offset={-80}
               duration={100}
-              className={stateAboutMe ? "nav-link" : null}
+              className={AboutMeState ? 'nav-link' : null}
             >
               About Me
-            </LinkScroll>
+            </ScrollLink>
           </li>
-          <li className={stateProjects ? "nav-item" : null}>
-            <LinkScroll
+          <li className={projectsState ? 'nav-item' : null}>
+            <ScrollLink
               to="projects"
               spy={true}
               smooth={true}
               offset={-85}
               duration={100}
-              className={stateProjects ? "nav-link" : null}
+              className={projectsState ? 'nav-link' : null}
             >
               My Project
-            </LinkScroll>
+            </ScrollLink>
           </li>
-          <li className={stateTools ? "nav-item" : null}>
-            <LinkScroll
+          <li className={toolsState ? 'nav-item' : null}>
+            <ScrollLink
               to="tools"
               spy={true}
               smooth={true}
               offset={-60}
               duration={100}
-              className={stateTools ? "nav-link" : null}
+              className={toolsState ? 'nav-link' : null}
             >
               Tools
-            </LinkScroll>
+            </ScrollLink>
           </li>
         </ul>
-        <LinkRouter to={"/contact"}>
-          {/* <div className="navbar-contact-me">Contact Me</div> */}
+
+        <RouterLink to={'/contact'}>
           <ContactMeNav>Contact Me</ContactMeNav>
-        </LinkRouter>
-        
+        </RouterLink>
       </nav>
     </>
   );
 }
-
-const setupBorder = ({width, type, color}) => {
-  return `${width}px ${type} ${color}`
-}
-
-

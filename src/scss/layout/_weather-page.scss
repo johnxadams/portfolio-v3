@@ -137,33 +137,35 @@
   z-index: -1;
 }
 
+// Weather backgroundImages
+
 .clear::before {
-  // content: "";
+  content: "";
   background: url(../../assets/bg-weather/clear-weather.jpg) no-repeat center
     center/cover;
 }
 .rain::before {
-  // content: "";
+  content: "";
   background: url(../../assets/bg-weather/rain-weather.jpg) no-repeat center
     center/cover;
 }
 .clouds::before {
-  // content: "";
+  content: "";
   background: url(../../assets/bg-weather/clouds-weather.jpg) no-repeat center
     center/cover;
 }
 .drizzle::before {
-  // content: "";
+  content: "";
   background: url(../../assets/bg-weather/drizzle-weather.jpg) no-repeat center
     center/cover;
 }
 .snow::before {
-  // content: "";
+  content: "";
   background: url(../../assets/bg-weather/snow-weather.jpg) no-repeat center
     center/cover;
 }
 .mist::before {
-  // content: "";
+  content: "";
   background: url(../../assets/bg-weather/mist-weather.jpg) no-repeat center
     center/cover;
 }
