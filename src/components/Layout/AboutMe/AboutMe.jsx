@@ -1,11 +1,14 @@
 //image
 import aboutmePrototype from '../../../assets/about-me-img/aboutmePrototype.jpg';
 
+// styles-components
+import { AboutMeTitle } from '../../StyledComponents/Title';
+
 export default function AboutMe() {
   return (
     <div className="body-about-me">
       <section className="left-about-me">
-        <h2>ABOUT ME</h2>
+        <AboutMeTitle>ABOUT ME</AboutMeTitle>
         <p>
           I'm an impassioned developer who loves to craft solid and scalable
           visuals on the internet.

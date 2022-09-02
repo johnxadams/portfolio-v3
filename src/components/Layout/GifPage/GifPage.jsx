@@ -1,17 +1,15 @@
-
 // components
-import GifContainer from './GifContainer/GifContainer'
+import GifContainer from './GifContainer/GifContainer';
 
 // data
-import { worksArr } from "../../../data";
-
+import { worksArr } from '../../../data';
 
 export default function GifPage() {
   return (
-      <>
-        <div className='gif-page'>             
-            <GifContainer worksArr={worksArr}/>
-        </div>
-      </>
-  )
+    <>
+      <div className="gif-page">
+        <GifContainer worksArr={worksArr} />
+      </div>
+    </>
+  );
 }

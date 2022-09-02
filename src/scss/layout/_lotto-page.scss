@@ -1,18 +1,12 @@
 .lotto-container {
-  // background: green;
-  min-height: 35rem;
+  min-height: 40rem;
+  padding-top: 5rem;
 
   // @include flex-justify-align-dir(center, center, column);
 .topic-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  h1 {
-    color: $mainLight;
-    font-family: kameron, sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
-  }
   span {
     color: $mainLight;
     font-family: mukta, sans-serif;

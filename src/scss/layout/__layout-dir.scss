@@ -38,7 +38,6 @@
   @include flex-justify-align-dir(center, center, column);
 }
 .lotto-page {
-  // position: relative;
   background-color: $secondaryDark; //#363535;//$mainDark;
   min-height: auto;
   @include flex-justify-align-dir(center, center, column);
@@ -56,6 +55,7 @@
 .weather-page {
   // background-color: blue;
   height: 95vh;
+  
 }
 .tools-page {
   min-height: 70vh;

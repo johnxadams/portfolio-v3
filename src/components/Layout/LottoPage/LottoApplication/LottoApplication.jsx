@@ -1,12 +1,11 @@
 
-
-
+import { LottoTitle } from "../../../StyledComponents/Title"
 export default function LottoApplication({outputLottoNumbers}){
 
     return (
         <>
             <div className="topic-container">
-                <h1>Lotto 6 / 49</h1>
+                <LottoTitle>Lotto 6 / 49</LottoTitle>
                 <span>good luck</span>
             </div>
             <div className="lotto-numbers-container">

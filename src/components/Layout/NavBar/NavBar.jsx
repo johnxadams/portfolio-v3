@@ -30,16 +30,16 @@ export default function NavBar() {
   const moveToNextNavigationOnScroll = () => {
     const scrollValue = document.documentElement.scrollTop;
 
-    scrollValue < 600 ? setHomeState(true) : setHomeState(false);
+    scrollValue < 450 ? setHomeState(true) : setHomeState(false);
 
-    scrollValue > 600 && scrollValue < 1000
+    scrollValue > 450 && scrollValue < 1000
       ? setAboutMeState(true)
       : setAboutMeState(false);
-    scrollValue > 1000 && scrollValue < 3500
+    scrollValue > 1000 && scrollValue < 3900
       ? setProjectsState(true)
       : setProjectsState(false);
 
-    scrollValue > 3500 ? setToolsState(true) : setToolsState(false);
+    scrollValue > 3900 ? setToolsState(true) : setToolsState(false);
   };
 
   window.addEventListener('scroll', changeNavBarOpacityOnScroll);
@@ -66,7 +66,7 @@ export default function NavBar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-220}
               duration={100}
               className={AboutMeState ? 'nav-link' : null}
             >

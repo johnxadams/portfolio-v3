@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DefaultInput = styled.input.attrs((props) => {
   return {
-    type: props.type || "text",
-    placeholder: props.placeholder || "place type value",
+    type: props.type || 'text',
+    placeholder: props.placeholder || 'place type value',
   };
 })`
   box-sizing: border-box;
@@ -14,12 +14,29 @@ export const DefaultInput = styled.input.attrs((props) => {
 `;
 
 export const PokeSearchInput = styled(DefaultInput)`
-margin: 0.5rem;
-width: auto;
-&:focus {
+  margin: 0.5rem;
+  width: auto;
+  &:focus {
     outline: none;
-}
-&::placeholder {
+  }
+  &::placeholder {
     text-transform: capitalize;
-}
-`
+  }
+`;
+export const WeatherInput = styled(DefaultInput)`
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  // border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+  margin-top: 1rem;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: #f8f8f8;
+      }
+    
+`;

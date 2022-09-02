@@ -16,7 +16,7 @@
     .gif-img-container {
       position: relative;
       border: 1.25px #716e77 solid;
-      box-shadow: 0px 30px 45px rgba(0, 0, 0, 0.144);
+      box-shadow: 0px 30px 45px rgba(0, 0, 0, 0.171);
       width: 75%;
       height: 75%;
       border-radius: 50%;
@@ -27,14 +27,20 @@
       cursor: pointer;
       background-position-y: 0%;
       transition: 0.75s ease-in-out;
+      opacity: 0.6;
+
       @include flex-justify-align-dir(center, center, row);
       &:hover {
         background-size: 350%;
+        opacity: 1;
       }
     }
     .weather-gif-img {
+      // filter: grayscale(100%);
       background-image: url('../../assets/project-img-gif/weatherProjectImg.jpg');
       &:hover {
+        filter: none;
+
         background-image: url('../../assets/project-img-gif/weatherProjectGif.gif');
       }
     }
@@ -53,16 +59,17 @@
     .project-card-description {
       width: 100%;
       height: auto;
-      // background: #fff;
+      // background: #0e1c2555;
       color: #716e77;
+
       @include flex-justify-align-dir(center, center, column);
       p {
         margin: 0.7rem auto;
       }
-      .github-link {
-        cursor: pointer;
-        text-decoration: underline;
-      }
+      // .github-link {
+      //   cursor: pointer;
+      //   text-decoration: underline;
+      // }
     }
   }
 }

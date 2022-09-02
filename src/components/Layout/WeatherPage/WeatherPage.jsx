@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
-// data & apiKey
-// import { apiKey } from "../../../api-key";
+// styledComponents
+import { WeatherTitle } from '../../StyledComponents/Title';
+import { WeatherCard } from '../../StyledComponents/WeatherCard';
+import { WeatherInput } from '../../StyledComponents/Input';
+// data
 import { monthData } from '../../../data';
 
 //librabries
 import axios from 'axios';
-// import 'dotenv/config';
 
 //icons
 import { WiThermometer, WiHumidity, WiStrongWind } from 'react-icons/wi';
@@ -17,7 +19,7 @@ export default function WeatherPage() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
   // initial value of Weather backgroundIma will be set in className='clouds'
-  const [bgWeather, setBgWeather] = useState('clouds');
+  const [bgWeather, setBgWeather] = useState('gray-clouds');
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
@@ -60,18 +62,17 @@ export default function WeatherPage() {
   return (
     <div className={`weather-app ${bgWeather}`}>
       <div className="search">
-        <input
+        <WeatherInput
           value={location}
           onChange={handleChange}
           onKeyPress={searchLocation}
           placeholder="Enter Location"
-          type="text"
         />
       </div>
       <section className="weather-info-container">
         <div className="top">
           <div className="location">
-            <p>{data.name}</p>
+            <WeatherTitle>{data.name}</WeatherTitle>
           </div>
 
           {data.name && (
@@ -95,27 +96,27 @@ export default function WeatherPage() {
               <p> Today, {date}</p>
             </div>
             <div className="bottom">
-              <div className="feels">
+              <WeatherCard className="feels">
                 {data.main && <p>{Math.floor(data.main.feels_like)}°</p>}
                 <div className="weather-icon-bottom">
                   <WiThermometer className="wi" />
                 </div>
                 <p>Feels Like</p>
-              </div>
-              <div className="humidity">
+              </WeatherCard>
+              <WeatherCard className="humidity">
                 {data.main ? <p>{data.main.humidity}%</p> : null}
                 <div className="weather-icon-bottom">
                   <WiHumidity className="wi" />
                 </div>
                 <p>Humidity</p>
-              </div>
-              <div className="wind">
+              </WeatherCard>
+              <WeatherCard className="wind">
                 {data.wind && <p>{Math.floor(data.wind.speed)} km/h</p>}
                 <div className="weather-icon-bottom">
                   <WiStrongWind className="wi" />
                 </div>
                 <p>Wind Speed</p>
-              </div>
+              </WeatherCard>
             </div>
           </>
         )}
