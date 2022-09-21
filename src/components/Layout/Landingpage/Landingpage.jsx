@@ -3,11 +3,11 @@ export const Landingpage = () => {
     <>
       <div className="lp-main">
         <p>Hello, my name is</p>
-        <div className="my-name">John Adams,</div>
+        <div className="my-name">John Adams.</div>
         
-        <div className="my-skill">
-          a Junior Web Developer located in Leipzig, Germany.
-        </div>
+        <p className="my-skill">
+          A Junior Web Developer located in Leipzig, Germany.
+        </p>
       </div>
     </>
   );

@@ -33,8 +33,6 @@
 }
 .gif-page {
   background-color: $secondaryDark;
-  min-height: object-fit;
-  // height: 50vh ;
   @include flex-justify-align-dir(center, center, column);
 }
 .lotto-page {
@@ -43,13 +41,8 @@
   @include flex-justify-align-dir(center, center, column);
 }
 .pokemon-page {
-  // position: relative;
   background-color: $mainDark;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-  @include flex-justify-align-dir(center, center, row);
+   @include flex-justify-align-dir(center, center, row);
   min-height: auto;
 }
 .weather-page {

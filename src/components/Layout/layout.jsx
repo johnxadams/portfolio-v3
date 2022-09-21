@@ -12,6 +12,7 @@ import Tools from "./Tools/Tools";
 import { worksArr } from "../../data";
 import Footer from "./Footer/Footer";
 import { useLocation } from "react-router-dom";
+import { Container } from "../StyledComponents/Container";
 
 
 
@@ -25,6 +26,7 @@ const isHomePage = pathname === "/";
       <section>
         <NavBar />
       </section>
+      <Container>
       <section id={"/"} className="landing-page">
         <Landingpage />
       </section>
@@ -53,6 +55,7 @@ const isHomePage = pathname === "/";
         <Footer />
       </section>
       }
+      </Container>
     </>
   );
 };

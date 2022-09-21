@@ -5,3 +5,8 @@
     --lightBorder: 2px solid #f8f8f3;
     --hoverLottoDiv: #CC527A;
 }
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+  }

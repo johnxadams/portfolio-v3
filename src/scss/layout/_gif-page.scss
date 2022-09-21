@@ -1,18 +1,18 @@
 .gif-container {
   /* width: 3rem; */
   min-height: auto;
-  padding-top: 5rem;
-  width: 50rem;
-  // background-color: aquamarine;
+  padding: 5em;
+  // width: 90rem;
+  // background-color: rgb(24, 110, 81);
   @include flex-justify-align-dir(center, flex-start, row);
   flex-wrap: wrap;
 
   .project-card {
-    width: 10rem;
-    height: 10rem;
-    // background-color: goldenrod;
-    // border: 2px black solid;
-    margin: 2rem;
+    width: 20em;
+    height: 20em;
+    // border: 2px rgba(0, 0, 0, 0.568) solid;
+    padding: 1em;
+    margin: 2em;
     .gif-img-container {
       position: relative;
       border: 1.25px #716e77 solid;

@@ -30,29 +30,29 @@ export const worksArr = [
     projectClassName: "pokemon-gif-img gif-img-container",
     gitHubLink: "",
   },
-  {
-    name: "Pokemon",
-    img: "https://placebear.com/640/360",
-    gif: "this gif",
-    alt: "Pokemon API",
-    gitHubLink: "",
-  },
-  {
-    name: "Pokemon",
-    img: "https://placebear.com/640/360",
-    gif: "this gif",
-    alt: "Pokemon API",
-    projectClassName: "weather-img",
-    gitHubLink: "",
-  },
-  {
-    name: "Weather-App",
-    img: "https://placebear.com/640/360",
-    gif: "this gif",
-    alt: "Pokemon API",
-    projectClassName: "weather-img",
-    gitHubLink: "",
-  },
+  // {
+  //   name: "Pokemon",
+  //   img: "https://placebear.com/640/360",
+  //   gif: "this gif",
+  //   alt: "Pokemon API",
+  //   gitHubLink: "",
+  // },
+  // {
+  //   name: "Pokemon",
+  //   img: "https://placebear.com/640/360",
+  //   gif: "this gif",
+  //   alt: "Pokemon API",
+  //   projectClassName: "weather-img",
+  //   gitHubLink: "",
+  // },
+  // {
+  //   name: "Weather-App",
+  //   img: "https://placebear.com/640/360",
+  //   gif: "this gif",
+  //   alt: "Pokemon API",
+  //   projectClassName: "weather-img",
+  //   gitHubLink: "",
+  // },
 ];
 
 export const pokemonStatsNaming = {

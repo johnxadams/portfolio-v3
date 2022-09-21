@@ -4,24 +4,20 @@
     width: 50%;
     height: auto;
     background: $mainDark;
-    padding-bottom: 5rem;
+    padding-bottom: 5em;
     @include flex-justify-align-dir(center, center, column);
-    // h2 {
-    //   font-size: 2.25rem;
-    //   width: 29rem;
-    //   color: cadetblue;
-    // }
     p:nth-child(2) {
       font-weight: bold;
       font-size: 1.75rem;
-      width: 29rem;
-      margin-top: -1.5rem;
+      width: 16.75em;
+      margin-top: -1rem;
       color: $mainLight;
     }
     p:nth-child(3) {
       font-size: 1.25rem;
-      width: 29rem;
+      width: 23.5em;
       color: $mainLight;
+      // border: 2px solid red;
     }
   }
   .right-img-container {

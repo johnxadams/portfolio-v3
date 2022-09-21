@@ -15,14 +15,14 @@ export default function AboutMe() {
         </p>
         <p>
           My Interest in web-development started back in 2017 – when I worked in
-          a start-up company serveRain, todays Tillome, Inc. <br /> <br />
+          a start-up company serveRain, todays Tillome Inc. <br /> <br />
           Fast forward today I've refined my skills by learning the foundations
           to become a full stack web developer and I'm looking forward to apply
           my experience and help your business grow.
         </p>
       </section>
       <section className="right-img-container">
-        <img src={aboutmePrototype} alt="" />
+        <img src={aboutmePrototype} alt="img" />
       </section>
     </div>
   );
