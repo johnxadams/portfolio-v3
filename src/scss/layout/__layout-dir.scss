@@ -10,7 +10,7 @@
 @import "./footer.scss";
 
 .landing-page {
-  background: linear-gradient(45deg, $mainDark,#323e4b, #2c2a2a, $secondaryDark);
+  background: linear-gradient(45deg, $mainDark,#2c3750, #132733, $secondaryDark);
   animation: gradient 15s ease infinite;
   background-size: 500% 500%;
   min-height: 75vh;
@@ -32,7 +32,7 @@
   min-height: auto;
 }
 .gif-page {
-  background-color: $secondaryDark;
+  // background-color: $secondaryDark;
   @include flex-justify-align-dir(center, center, column);
 }
 .lotto-page {
@@ -47,7 +47,7 @@
 }
 .weather-page {
   // background-color: blue;
-  height: 95vh;
+  // height: 95vh;
   
 }
 .tools-page {

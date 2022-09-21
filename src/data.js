@@ -23,7 +23,7 @@ export const worksArr = [
     gitHubLink: "",
   },
   {
-    name: "Pokemon",
+    name: "Pokemon-API",
     img: pokemonProjectImg,
     gif: pokemonProjectGif,
     alt: "Pokemon API",

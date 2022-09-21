@@ -6,15 +6,18 @@ export const DefaultTitle = styled.h2`
 `;
 export const AboutMeTitle = styled(DefaultTitle)`
   font-size: 2.25rem;
-  width: 29rem;
+  width: 13.05em;
   color: cadetblue;
   font-weight: bold;
+  /* border: 2px dashed tomato; */
 
 `;
 
 export const WeatherTitle = styled(DefaultTitle)`
-  margin-top: -0.1rem;
+  margin: 0 auto;
+  padding: 0 0 .4em 0;
   font-weight: 500;
+  
 `;
 
 export const LottoTitle = styled(DefaultTitle)`

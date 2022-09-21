@@ -44,8 +44,11 @@ export default function WeatherPage() {
   const date = `${current.getUTCDate()} ${
     monthData[current.getUTCMonth() + 1]
   }`;
+
   //get time
   const getTime = () => {
+    const current = new Date();
+
     const time = current.toUTCString();
     const timeHours = parseInt(time.slice(-12, -10));
 

@@ -1,4 +1,5 @@
 .body-about-me {
+  margin: 3rem 0;
   @include flex-justify-align-dir(space-evenly, center, row);
   .left-about-me {
     width: 50%;
@@ -21,6 +22,7 @@
     }
   }
   .right-img-container {
+    //container maxwidth is = 1400px
     width: 50%;
     @include flex-justify-align-dir(center, center, row);
     img {
