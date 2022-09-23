@@ -13,7 +13,7 @@ export const AboutMeTitle = styled(DefaultTitle)`
 
 `;
 
-export const WeatherTitle = styled(DefaultTitle)`
+export const WeatherLocationTitle = styled(DefaultTitle)`
   margin: 0 auto;
   padding: 0 0 .4em 0;
   font-weight: 500;

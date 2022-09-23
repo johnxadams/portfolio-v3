@@ -1,14 +1,18 @@
 // react hook
 import React, { useState } from 'react';
 
+// utils
+import { searchPokemon } from '../../../utils/pokemonPageUtils';
+
+// react-icons
 import { BsSearch } from 'react-icons/bs';
 
 // styled-components
 import { PokeSearchInput } from '../../StyledComponents/Input';
 import { PokeSearchBtn } from '../../StyledComponents/Button';
 
-//comments.txt #1
-
+//comments.js #1
+// using fetch on purpose
 const getPokemonData = async (pokemonName) => {
   const response = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
@@ -19,8 +23,6 @@ const getPokemonData = async (pokemonName) => {
 
 // rfc
 export default function PokemonPage() {
-
-  // useStates 2x
   const [pokemonData, setPokemonData] = useState({
     name: '',
     species: '',
@@ -37,50 +39,13 @@ export default function PokemonPage() {
   });
   const [pokemonName, setPokemonName] = useState('');
 
-  // eventHandlers 2x
-  const handlePokemonNameInput = (e) => {
-    setPokemonName(e.target.value.toLowerCase());
-  };
-
   const handlePokemonSearch = (e) => {
-    e.preventDefault();
-
-    if (!pokemonName) return;
-
-    getPokemonData(pokemonName).then((pokeData) => {
-      console.log("pokemonData from API: ", pokeData);
-
-      setPokemonData({
-        name: pokemonName,
-        species: pokeData.species.name,
-        img: pokeData.sprites.front_default,
-        // comments.txt #2
-        hp: [pokeData.stats[0].stat.name, pokeData.stats[0].base_stat],
-        attack: {
-          attackName: pokeData.stats[1].stat.name,
-          attackStat: pokeData.stats[1].base_stat,
-        },
-        defense: [pokeData.stats[2].stat.name, pokeData.stats[2].base_stat],
-        specialAttack: [
-          pokeData.stats[3].stat.name,
-          pokeData.stats[3].base_stat,
-        ],
-        specialDefense: [
-          pokeData.stats[4].stat.name,
-          pokeData.stats[4].base_stat,
-        ],
-        speed: [pokeData.stats[5].stat.name, pokeData.stats[5].base_stat],
-        abilities: [
-          pokeData.abilities[0].ability.name,
-          pokeData.abilities[1].ability.name,
-        ],
-        dataName: { stats: 'stats', abilities: 'abilities' },
-        classes: {
-          pokeNameContainer: 'pokemon-name-container',
-          imgContainer: 'img-container',
-        },
-      });
-      setPokemonName('');
+    searchPokemon({
+      e,
+      pokemonName,
+      getPokemonData,
+      setPokemonData,
+      setPokemonName,
     });
   };
 
@@ -89,7 +54,9 @@ export default function PokemonPage() {
       <div className="pokemon-container">
         <form id="form-tag" onSubmit={handlePokemonSearch}>
           <PokeSearchInput
-            onChange={handlePokemonNameInput}
+            onChange={(e) => {
+              setPokemonName(e.target.value.toLowerCase());
+            }}
             id="pokemon-input"
             type="text"
             placeholder="search pokemon"
