@@ -1,17 +1,8 @@
-// export const getPokemonData = async ({pokemonName}) => {
-//     const response = await fetch(
-//       `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
-//     );
-//     const pokeData = await response.json();
-//     return pokeData;
-//   };
-
-
 export const searchPokemon = ({
   e,
   pokemonName,
-  getPokemonData,
   setPokemonData,
+  getPokemonData,
   setPokemonName,
 }) => {
   e.preventDefault();

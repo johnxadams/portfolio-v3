@@ -1,3 +1,6 @@
+// fetch functions
+import { getPokemonData } from '../../fetch';
+
 // react hook
 import React, { useState } from 'react';
 
@@ -10,16 +13,6 @@ import { BsSearch } from 'react-icons/bs';
 // styled-components
 import { PokeSearchInput } from '../../StyledComponents/Input';
 import { PokeSearchBtn } from '../../StyledComponents/Button';
-
-//comments.js #1
-// using fetch on purpose
-const getPokemonData = async (pokemonName) => {
-  const response = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
-  );
-  const pokeData = await response.json();
-  return pokeData;
-};
 
 // rfc
 export default function PokemonPage() {
@@ -43,8 +36,8 @@ export default function PokemonPage() {
     searchPokemon({
       e,
       pokemonName,
-      getPokemonData,
       setPokemonData,
+      getPokemonData,
       setPokemonName,
     });
   };
