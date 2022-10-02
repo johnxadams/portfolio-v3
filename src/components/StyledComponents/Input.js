@@ -14,7 +14,7 @@ export const DefaultInput = styled.input.attrs((props) => {
 `;
 
 export const PokeSearchInput = styled(DefaultInput)`
-  margin: 0.5rem;
+  margin: 0.5em;
   width: auto;
   &:focus {
     outline: none;
@@ -22,6 +22,10 @@ export const PokeSearchInput = styled(DefaultInput)`
   &::placeholder {
     text-transform: capitalize;
   }
+@media (max-width: 767px) {
+width: 12em;
+margin: .3em;
+}
 `;
 export const WeatherInput = styled(DefaultInput)`
   padding: 0.7rem 1.5rem;

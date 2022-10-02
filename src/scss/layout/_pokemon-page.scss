@@ -1,7 +1,7 @@
 .pokemon-container {
   height: 50rem;
   // background: lightblue;
-    @include flex-justify-align-dir(center, center, column);
+  @include flex-justify-align-dir(center, center, column);
   form {
     // border: 2px solid red;
     display: flex;
@@ -55,34 +55,35 @@
 
   #pokedex-container {
     // display: block;
-    width: 18rem;
-    min-height: 30rem;
+    width: 18em;
+    min-height: 30em;
     border-radius: 10px;
     background: linear-gradient(110deg, #c2c2c2, #efefef, #bcbcbc);
-    margin: 1rem 0 0 0;
+    margin: 1em auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 2px 2px 9px black;
     .pokemon-name-container {
       background-color: rgba(68, 68, 68, 0.123);
-      width: 14rem;
+      width: 10em;
       text-align: center;
       letter-spacing: 1.5px;
       font-size: 1.4rem;
       font-weight: 450;
-      padding: 0.1rem;
+      padding: 0.1em;
       border-radius: 5px;
-      margin: 2rem 0 1rem 0;
+      margin: 1.7em auto;
     }
     .img-container {
-      width: 6.5rem;
-      height: 6.5rem;
-      border: 0.3rem solid #b8b8b8b0;
+      width: 6.5em;
+      height: 6.5em;
+      border: 0.3em solid #b8b8b8b0;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: -0.5em;
       img {
         filter: grayscale(100%);
       }
@@ -91,18 +92,18 @@
     .ability-header {
       text-decoration-thickness: 2px;
       border-bottom: #afafafd7 2px solid;
-      margin: 1.3rem 0 0.2em 0;
+      margin: 1em auto 0.3em;
       font-size: 0.9rem;
       font-weight: bold;
       letter-spacing: 1px;
-      line-height: 1rem;
+      line-height: 1.1em;
     }
     .list-of-stats {
       list-style-type: none;
-      width: 10rem;
+      width: 10em;
       display: flex;
       justify-content: space-between;
-      line-height: 1.3rem;
+      line-height: 1.3em;
     }
     .ability-names-block {
       display: flex;
@@ -110,7 +111,7 @@
       :nth-child(1),
       :nth-child(2) {
         font-size: 1rem;
-        line-height: 1.5rem;
+        line-height: 1.5em;
         text-align: center;
       }
     }
@@ -129,6 +130,31 @@
       .stats-header,
       .ability-header {
         border-bottom: #f3f3f3ef 2px solid;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .pokemon-container {
+    #pokedex-container {
+      width: 15em;
+      min-height: 26em;
+      margin: 0.5em auto;
+      .pokemon-name-container {
+        font-size: 1.2rem;
+        margin: 1.25em auto;
+      }
+      .img-container {
+        width: 5.5em;
+        height: 5.5em;
+      }
+      .ability-names-block {
+      
+        :nth-child(1),
+        :nth-child(2) {
+          font-size: .95rem;
+        }
       }
     }
   }
