@@ -1,7 +1,7 @@
 .gif-container {
   /* width: 3rem; */
   min-height: auto;
-  padding: 5em;
+  // padding: 5em;
   // width: 90rem;
   // background-color: rgb(24, 110, 81);
   @include flex-justify-align-dir(center, flex-start, row);
@@ -70,6 +70,18 @@
       //   cursor: pointer;
       //   text-decoration: underline;
       // }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .gif-container {
+    .project-card {
+      width: 14em;
+      height: 14em;
+      margin: 1em;
+      padding: 1em;
+      // border: 2px rgba(0, 0, 0, 0.568) solid;
     }
   }
 }

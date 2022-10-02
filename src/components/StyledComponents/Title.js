@@ -3,6 +3,13 @@ import styled from 'styled-components';
 export const DefaultTitle = styled.h2`
   font-size: 3rem;
   font-weight: 500;
+@media (max-width: 767px) {
+  font-size: 2.5rem;
+
+}
+@media (max-width: 414px) {
+font-size: 2rem;
+}
 `;
 export const AboutMeTitle = styled(DefaultTitle)`
   font-size: 2.25rem;

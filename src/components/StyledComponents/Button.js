@@ -1,19 +1,25 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const DefaultButton = styled.button.attrs((props) => {
-  return { type: props.type || "button" };
+  return { type: props.type || 'button' };
 })`
-  width: 12.5rem;
-  height: 3rem;
+  width: 12.5em;
+  /* height: 3rem; */
   background: var(--mainDark);
   color: var(--mainLight);
   border: 2px solid var(--mainLight);
   border-radius: 0.25rem;
   cursor: pointer;
   text-transform: capitalize;
-  padding: 0.25rem;
+  padding: 1em;
   /* display: block; */
-  margin: 1rem auto;
+  margin: 1em auto;
+
+  @media (max-width: 767px) {
+    font-size: .8rem;
+    width: 9em;
+    padding: 0.5em;
+  }
 `;
 
 export const ContactMeNav = styled(DefaultButton)`
@@ -48,7 +54,7 @@ export const SubmitBtn = styled(DefaultButton)`
  * Reset & Retry
  * Using the Ternary Operator to apply diffrent style
  * to each Btn
- * */ 
+ * */
 export const LottoBtn = styled(DefaultButton)`
   margin: 2rem 1rem;
   font-weight: bold;
@@ -63,6 +69,7 @@ export const LottoBtn = styled(DefaultButton)`
           background: var(--mainLight);
           border: 2px solid var(--mainDark);
           color: var(--mainDark);
+          /* width: 9em; */
           &:hover {
             background: var(--mainDark);
           }
@@ -71,7 +78,7 @@ export const LottoBtn = styled(DefaultButton)`
           }
         `
       : css`
-          width: 10rem;
+          width:8em;
           &:hover {
             background: var(--mainLight);
           }
@@ -83,12 +90,12 @@ export const LottoBtn = styled(DefaultButton)`
 `;
 
 export const PokeSearchBtn = styled(DefaultButton)`
-/* background: radial-gradient(#262c38, #716e77); */
-width: 3rem;
-height: 3rem;
-border-radius: 50%;
-border: none;
-.searchIcon {
-  font-size: 1.5rem;
-}
-`
+  /* background: radial-gradient(#262c38, #716e77); */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  .searchIcon {
+    font-size: 1.5rem;
+  }
+`;

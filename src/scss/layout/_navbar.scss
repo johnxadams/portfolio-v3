@@ -5,11 +5,14 @@ nav {
   @include flex-justify-align-dir(space-evenly, center, row);
   position: fixed;
   z-index: 1;
+  // background-color: green;
+
   ul {
     display: flex;
     width: auto;
     margin-left: 18rem;
     margin-right: -10rem;
+    // background-color: green;
     li {
       list-style: none;
       margin-right: 2rem;
