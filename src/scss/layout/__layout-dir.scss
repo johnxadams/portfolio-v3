@@ -9,6 +9,9 @@
 @import "./tools-page";
 @import "./footer.scss";
 
+.hamburger-menu {
+  // position: fixed;
+}
 .landing-page {
   background: linear-gradient(45deg, $mainDark,#2c3750, #162d3b, $secondaryDark);
   animation: gradient 15s ease infinite;
@@ -60,4 +63,7 @@
   // background: $mainLight;
   background: $footerBG;
   @include flex-justify-align-dir(center, center, column);
+}
+.hideContent {
+  display: none;
 }

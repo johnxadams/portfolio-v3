@@ -18,6 +18,9 @@ export const DefaultButton = styled.button.attrs((props) => {
 
 export const ContactMeNav = styled(DefaultButton)`
   background: #2323235d;
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const ContactMeFooter = styled(DefaultButton)`

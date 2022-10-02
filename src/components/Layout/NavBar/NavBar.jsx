@@ -1,5 +1,5 @@
 //hooks
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 //librabries
 import { Link as ScrollLink } from 'react-scroll';
@@ -7,16 +7,25 @@ import { Link as RouterLink } from 'react-router-dom';
 
 //styled-components
 import { ContactMeNav } from '../../StyledComponents/Button';
+import { MyContext } from '../../Context/MyContexts';
 
 export default function NavBar() {
+  const {hamburger} = useContext(MyContext)
+
   //useStates 5x
   const [opacityState, setOpacityState] = useState(false);
   const [homeState, setHomeState] = useState(false);
   const [AboutMeState, setAboutMeState] = useState(false);
   const [projectsState, setProjectsState] = useState(false);
   const [toolsState, setToolsState] = useState(false);
+  // const [hamburgerMenu, setHamburgerMenu] = useState(false);
 
-  // eventListener 2x
+  // // eventListener 2x
+
+  // const handleHamburgerMenu = (e) => {
+  //   setHamburgerMenu(!hamburgerMenu);
+  // };
+
   const changeNavBarOpacityOnScroll = () => {
     const scrollValue = document.documentElement.scrollTop;
 
@@ -47,7 +56,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className={opacityState ? 'navbar-opacity' : null}>
+      <nav className={`${opacityState ? 'navbar-opacity' : null} ${hamburger ? 'hideNavBar' : null}`}>
         <ul>
           <li className={homeState ? 'nav-item' : null}>
             <ScrollLink
@@ -102,7 +111,22 @@ export default function NavBar() {
         <RouterLink to={'/contact'}>
           <ContactMeNav>Contact Me</ContactMeNav>
         </RouterLink>
+
+        {/* <button
+          className={`hamburger ${hamburgerMenu ? 'is-active' : null}`}
+          onClick={handleHamburgerMenu}
+        >
+          <div className="hamburger-bar"></div>
+        </button> */}
+        {/* <nav className={`mobile-nav ${hamburgerMenu ? 'is-active' : null}`}>
+          <a href="#">Home</a>
+          <a href="#">About Me</a>
+          <a href="#">My Project</a>
+          <a href="#">Tools</a>
+          <a href="#">Contact Me</a>
+        </nav> */}
       </nav>
+      
     </>
   );
 }

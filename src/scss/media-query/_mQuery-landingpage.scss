@@ -1,152 +1,26 @@
-@media only screen and (min-width: 769px) {
-  .big-box-behind-lp {
-    width: 60%;
-    height: 60vh;
-    margin-left: 2rem;
-    border-radius: 28px;
-    .inside-big-box-lp {
-      width: 93%;
-      border-radius: 8px;
-      .inside-big-box-lp-header {
-        height: 4rem;
-        .my-logo-container {
-          width: 3.5rem;
-        }
-        .my-network-container-header {
-          //nothing to do
-          i {
-            font-size: 1rem;
-            margin-right: 0.6rem;
-          }
-        }
-      }
-      .name-and-skills-container {
-        height: 6rem;
-        margin: 0.5rem 0 0 0rem;
-        .my-name {
-          height: 5rem;
-          font-size: 4rem;
-          padding: 1.8rem 0 0 1rem;
-        }
-        .my-skills {
-          height: 3rem;
-          span {
-            margin: 0 0 0.5rem 0.5rem;
-            border: 1px solid black;
-            padding: 3px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-          }
-        }
-      }
-      .my-info-box {
-        margin-top: 2.2rem;
-        font-size: 1rem;
-      }
-    }
-  }
-  .profil-img-container-lp {
-    height: 13rem;
-    width: 13rem;
-    margin-top: 12rem;
-  }
-}
+/* 
+Smartphone
+@media only screen and (max-width: 767px)
 
-@media only screen and (min-width: 992px) {
-  .big-box-behind-lp {
-    height: 65vh;
-    border-radius: 35px;
-    .inside-big-box-lp {
-      width: 94%;
-      border-radius: 10px;
-      .inside-big-box-lp-header {
-        height: 6rem;
-        .my-logo-container {
-          width: 4.5rem;
-        }
-        .my-network-container-header {
-          //nothing to do
-          i {
-            font-size: 1.2rem;
-            margin-right: 0.8rem;
-          }
-        }
-      }
-      .name-and-skills-container {
-        height: 9rem;
-        margin: 0.8rem 0 0 0rem;
-        .my-name {
-          height: 6rem;
-          font-size: 5.5rem;
-          padding: 1.4rem 0 0 1rem;
-        }
-        .my-skills {
-          // height: 8rem;
-          span {
-            margin: 0 0 0.8rem 0.8rem;
-            border: 1.5px solid black;
-            padding: 4px;
-            border-radius: 13px;
-            font-size: 0.9rem;
-          }
-        }
-      }
-      .my-info-box {
-        margin-top: 1rem;
-        font-size: 1.1rem;
-      }
-    }
-  }
-  .profil-img-container-lp {
-    height: 15rem;
-    width: 15rem;
-    margin: 12rem 0 0 4rem;
-  }
-}
+Tablet
+@media only screen and (max-width: 767px) and (max-width: 1023px)
 
-@media only screen and (min-width: 1200px) {
-  .big-box-behind-lp {
-    height: 68vh;
-    .inside-big-box-lp {
-      .inside-big-box-lp-header {
-        .my-logo-container {
-          width: 5rem;
-        }
-        .my-network-container-header {
-          //nothing to do
-          i {
-            font-size: 1.4rem;
-            margin-right: 1rem;
-          }
-        }
-      }
-      .name-and-skills-container {
-        height: 10rem;
-        margin: 0.8rem 0 0 0rem;
-        .my-name {
-          height: 7rem;
-          font-size: 6.5rem;
-        }
-        .my-skills {
-          // height: 8rem;
-          span {
-            margin: 0 0 0.8rem 0.8rem;
-            border: 1.5px solid black;
-            padding: 4px;
-            border-radius: 13px;
-          }
-        }
-      }
-      .my-info-box {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        line-height: 25px;
-      }
+Desktop
+@media only screen and (min-width: 1024px)
+*/
+
+@media only screen and (max-width: 767px) {
+  .lp-main {
+    text-align: center;
+    margin: 10em auto;
+    color: $mainLight;
+    // border: 2px solid red;
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
     }
-  }
-  .profil-img-container-lp {
-    height: 16rem;
-    width: 16rem;
-    margin: 12rem 0 0 6rem;
+    .my-name {
+      font-size: 3rem;
+    }
   }
 }

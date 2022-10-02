@@ -10,6 +10,10 @@ export const AboutMeTitle = styled(DefaultTitle)`
   color: cadetblue;
   font-weight: bold;
   /* border: 2px dashed tomato; */
+@media (max-width: 767px) {
+  width: 85%;
+
+}
 
 `;
 

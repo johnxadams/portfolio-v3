@@ -9,7 +9,7 @@
     @include flex-justify-align-dir(center, center, column);
     p:nth-child(2) {
       font-weight: bold;
-      font-size: 1.75rem;
+  font-size: 1.75rem;
       width: 16.75em;
       margin-top: -1rem;
       color: $mainLight;
@@ -29,5 +29,29 @@
       object-fit: contain;
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .body-about-me {
+    @include flex-justify-align-dir(space-evenly, center, column);
+    .left-about-me {
+    padding-bottom: 2em;
+    width: 100%;
+      p:nth-child(2) {
+      font-size: 1.75rem;
+      width: 85%;
+    }
+    p:nth-child(3) {
+      width: 85%;
+      font-size: 1.25rem;
+    }
+    }
+  .right-img-container {
+  width: 100%;
+    img {
+    width: 85%;
+    }
+  }
   }
 }

@@ -1,4 +1,5 @@
 // components
+import { useContext } from 'react';
 import NavBar from "./NavBar/NavBar";
 import { Landingpage } from "./Landingpage/Landingpage";
 import AboutMe from "./AboutMe/AboutMe";
@@ -7,16 +8,19 @@ import LottoPage from "./LottoPage/LottoPage";
 import PokemonPage from "./PokemonPage/PokemonPage";
 import WeatherPage from "./WeatherPage/WeatherPage";
 import Tools from "./Tools/Tools";
+import { MyContext } from '../Context/MyContexts';
 
 //data
 import { worksArr } from "../../data";
 import Footer from "./Footer/Footer";
 import { useLocation } from "react-router-dom";
 import { Container } from "../StyledComponents/Container";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 
 
 export const Layout = () => {
+  const {hamburger} = useContext(MyContext);
 
   const { pathname } = useLocation();
 const isHomePage = pathname === "/";
@@ -26,7 +30,10 @@ const isHomePage = pathname === "/";
       <section>
         <NavBar />
       </section>
-      <Container>
+      <section className="hamburger-menu">
+        <HamburgerMenu/>
+      </section>
+      <Container className={`${hamburger ? "hideContent" : null}`} >
       <section id={"/"} className="landing-page">
         <Landingpage />
       </section>
