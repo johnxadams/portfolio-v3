@@ -74,11 +74,25 @@
   }
 }
 
+
+
 @media (max-width: 767px) {
   .gif-container {
     .project-card {
-      width: 14em;
-      height: 14em;
+      width: 13em;
+      height: 13em;
+      margin: 1em;
+      padding: 1em;
+      // border: 2px rgba(0, 0, 0, 0.568) solid;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .gif-container {
+    .project-card {
+      width: 9.5em;
+      height: 9.5em;
       margin: 1em;
       padding: 1em;
       // border: 2px rgba(0, 0, 0, 0.568) solid;

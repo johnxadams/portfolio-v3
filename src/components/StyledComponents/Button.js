@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const DefaultButton = styled.button.attrs((props) => {
   return { type: props.type || 'button' };
 })`
-  width: 12.5em;
+  width: 11em;
   /* height: 3rem; */
   background: var(--mainDark);
   color: var(--mainLight);
@@ -11,7 +11,8 @@ export const DefaultButton = styled.button.attrs((props) => {
   border-radius: 0.25rem;
   cursor: pointer;
   text-transform: capitalize;
-  padding: 1em;
+  padding: .8em;
+  font-size: .9rem;
   /* display: block; */
   margin: 1em auto;
 
